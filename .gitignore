@@ -1,0 +1,8 @@
+/*
+*~
+*#
+!.gitignore
+!init.el
+!Cask
+!rc/
+!snippets/

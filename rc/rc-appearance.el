@@ -1,0 +1,77 @@
+;;; Configuration for appearance
+
+
+;;; initial window size
+;; (setq initial-frame-alist
+;;      '((width .  102)
+;; 	(height . 54)))
+;; default/subsequent window
+;; (setq default-frame-alist
+;;      '((width . 100)
+;; 	(height . 54)))
+
+;; (add-to-list 'custom-theme-load-path (expand-file-name "themes" user-emacs-directory))
+
+;;; custom theme
+;; (setq molokai-theme-kit t)
+(load-theme 'molokai t)
+;; (if (display-graphic-p)
+;;     (load-theme 'molokai t)
+;;   (load-theme 'material t))
+
+;;; set a default font
+(when (member "Source Code Pro" (font-family-list))
+  (set-face-attribute 'default nil :font "Source Code Pro Semibold")
+  (add-to-list 'initial-frame-alist '(font . "Source Code Pro Semibold-13"))
+  (add-to-list 'default-frame-alist '(font . "Source Code Pro Semibold-13")))
+
+
+;;; hide the startup message
+(setq inhibit-startup-message t)
+
+
+;;; hide menu bar
+(unless (display-graphic-p)
+  (menu-bar-mode -1))
+
+;;; hide tool bar
+(when (fboundp 'tool-bar-mode)
+  (tool-bar-mode -1))
+
+;;; hid scroll bar
+;; (when (fboundp 'scroll-bar-mode)
+;;   (scroll-bar-mode -1))
+
+
+;;; show directory name when open files with same names
+(require 'uniquify)
+(setq uniquify-buffer-name-style 'forward)
+
+
+;;; always show line numbers
+(global-linum-mode 1)
+
+;;; always show line and column number
+(line-number-mode 1)
+(column-number-mode 1)
+
+
+;;; turn on highlight current line
+(global-hl-line-mode 1)
+
+;;; turn on highlight matching brackets when cursor is on one
+(show-paren-mode 1)
+(setq show-paren-style 'mixed)	; parenthesis, expression or mixed
+
+;;; start rainbow-delimiters mode automatically in most programming modes
+(add-hook 'prog-mode-hook #'rainbow-delimiters-mode)
+
+
+;;; make soft wrap
+(global-visual-line-mode 1)
+
+;;; display "lambda" as "λ"
+(global-prettify-symbols-mode 1)
+
+
+(provide 'rc-appearance)
