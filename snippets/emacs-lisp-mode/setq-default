@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# contributor: Jiezhe Wang (wangjiezhe@gmail.com)
+# name: setq-default
+# key: setq-default
+# key: sd
+# --
+(setq-default $0 )

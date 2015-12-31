@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# contributor: Jiezhe Wang (wangjiezhe@gmail.com)
+# name: add-to-list
+# key: add-to-list
+# key: atl
+# --
+(add-to-list $0 )
