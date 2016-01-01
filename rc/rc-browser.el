@@ -3,6 +3,12 @@
 ;;; make emacs always use its own browser for opening URL links
 ;;; or set specific browser to open links
 (setq browse-url-browser-function 'eww-browse-url)
+
+;;; enable command `eww-list-bookmarks'
+;; (require 'eww)
+(autoload 'eww-list-bookmarks "eww" "Display the bookmarks" t)
+
+;;; press `f' to follow links
 (eval-after-load "eww"
   '(progn (define-key eww-mode-map "f" 'eww-lnum-follow)
           (define-key eww-mode-map "F" 'eww-lnum-universal)))
