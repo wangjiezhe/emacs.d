@@ -27,7 +27,7 @@
 
 
 ;;; stop creating those backup~ files
-(setq make-backup-files nil)
+;; setq make-backup-files nil)
 
 ;;; save bookmark immediately when changed
 (setq bookmark-save-flag 1)
@@ -54,6 +54,12 @@
       (quote (read-only t point-entered minibuffer-avoid-prompt
 			face minibuffer-prompt)))
 
+;;; aloow minibuffer command while in the minibuffer
+(setq enable-recursive-minibuffers t)
+
+;; recenter the window when there is only three lines
+(setq scroll-margin 3)
+
 ;;; after copy Ctrl+c in Linux X11, you can paste by `yank' in emacs
 (setq x-select-enable-clipboard t)
 ;;; after mouse selection in X11, you can paste by `yank' in emacs
@@ -68,6 +74,9 @@
 ;;; mouse yank at point instead of at click
 (setq mouse-yank-at-point t)
 
+;;; use a larger kill ring
+(setq kill-ring-max 200)
+
 ;;; add a newline automatically at the end of the line when saved
 (setq require-final-newline t)
 
@@ -80,10 +89,41 @@
 ;;; ediff is set up to use the existing frame instead of creating a new one
 (setq ediff-window-setup-function 'ediff-setup-windows-plain)
 
+;;; visit image files as images
+(auto-image-file-mode)
+
+;;; enable Font-Lock mode to highlight
+(global-font-lock-mode)
+
+;;; enable some diabled function
+(put 'set-goal-column 'disabled nil)
+(put 'narrow-to-region 'disabled nil)
+(put 'upcase-region 'disabled nil)
+(put 'downcase-region 'disabled nil)
+(put 'LaTeX-hide-environment 'disabled nil)
+
+;;; use version control when save backups
+(setq version-control t)
+(setq kept-new-versions 3)
+(setq delete-old-versions t)
+(setq kept-old-versions 2)
+(setq dired-kept-versions 1)
+
 
 ;;; custom filetype
-(add-to-list 'auto-mode-alist '("Cask" . emacs-lisp-mode))
-(add-to-list 'auto-mode-alist '("\\.sage\\'" . python-mode))
+;; (add-to-list 'auto-mode-alist '("Cask" . emacs-lisp-mode))
+;; (add-to-list 'auto-mode-alist '("\\.sage\\'" . python-mode))
+(mapcar
+ (function (lambda (setting)
+             (setq auto-mode-alist
+                   (cons setting auto-mode-alist))))
+ '(("Cask" . emacs-lisp-mode)
+   ("\\.sage\'" . python-mode)))
+
+
+;;; user's information
+(setq user-full-name "Jiezhe Wang")
+(setq user-mail-address "wangjiezhe@gmail.com")
 
 
 (provide 'rc-defaults)

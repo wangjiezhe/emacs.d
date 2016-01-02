@@ -39,13 +39,16 @@
   (tool-bar-mode -1))
 
 ;;; hid scroll bar
-;; (when (fboundp 'scroll-bar-mode)
-;;   (scroll-bar-mode -1))
+(unless (display-graphic-p)
+  (scroll-bar-mode -1))
 
 
 ;;; show directory name when open files with same names
 (require 'uniquify)
 (setq uniquify-buffer-name-style 'forward)
+
+;;; show buffer name in title instead of hostname
+(setq frame-title-format "emacs@%b")
 
 
 ;;; always show line numbers
@@ -72,6 +75,9 @@
 
 ;;; display "lambda" as "λ"
 (global-prettify-symbols-mode 1)
+
+;;; avoid mouse point gets too close to cursor
+(mouse-avoidance-mode 'animate)
 
 
 (provide 'rc-appearance)
