@@ -1,5 +1,5 @@
-(source "gnu" "http://elpa.gnu.org/packages/")
-(source "melpa" "http://melpa.milkbox.net/packages/")
+(source gnu)
+(source melpa)
 
 (depends-on "2048-game")
 (depends-on "ace-window")
@@ -41,7 +41,6 @@
 (depends-on "magit")
 (depends-on "magit-popup")
 (depends-on "material-theme")
-(depends-on "molokai-theme" :git "https://github.com/hbin/molokai-theme")
 (depends-on "org")
 (depends-on "package-build")
 (depends-on "pallet")
@@ -69,5 +68,3 @@
 (depends-on "with-editor")
 (depends-on "yasnippet")
 ;;;pallet-ignore
-(depends-on "molokai-theme"
-            :git "https://github.com/hbin/molokai-theme")
