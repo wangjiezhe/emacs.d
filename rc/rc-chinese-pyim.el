@@ -12,4 +12,7 @@
 (setq-default pyim-english-input-switch-function
 	      'pyim-dynamic-english-input-function)
 
+;;; use pyim to improve auto completion for chinese
+(setq pyim-company-max-length 6)
+
 (provide 'rc-chinese-pyim)
