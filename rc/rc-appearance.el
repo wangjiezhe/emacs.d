@@ -10,7 +10,7 @@
 ;;      '((width . 100)
 ;; 	(height . 54)))
 
-;; (add-to-list 'custom-theme-load-path (expand-file-name "themes" user-emacs-directory))
+(add-to-list 'custom-theme-load-path (expand-file-name "themes" user-emacs-directory))
 
 ;;; custom theme
 ;; (setq molokai-theme-kit t)
