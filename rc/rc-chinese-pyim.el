@@ -12,6 +12,9 @@
 (setq-default pyim-english-input-switch-function
 	      'pyim-dynamic-english-input-function)
 
+;;; disable pinyin search by default for instability
+(setq pyim-isearch-enable-pinyin-search nil)
+
 ;;; use pyim to improve auto completion for chinese
 (setq pyim-company-max-length 6)
 

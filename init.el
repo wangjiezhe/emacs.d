@@ -36,7 +36,7 @@
 (require 'rc-browser)
 (require 'rc-yasnippets)
 (require 'rc-auto-yasnippet)
-;; (require 'rc-chinese-pyim)
+(require 'rc-chinese-pyim)
 (require 'rc-magit)
 (require 'rc-company)
 (require 'rc-git-gutter)
