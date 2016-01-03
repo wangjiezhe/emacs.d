@@ -86,8 +86,19 @@
 ;;; `load' prefers the newest version of a file
 (setq load-prefer-newer t)
 
-;;; ediff is set up to use the existing frame instead of creating a new one
+;; Usage: emacs -diff file1 file2
+(defun command-line-diff (switch)
+  (let ((file1 (pop command-line-args-left))
+        (file2 (pop command-line-args-left)))
+    (ediff file1 file2)))
+(add-to-list 'command-switch-alist '("diff" . command-line-diff))
+
+;;; saner ediff default
+(setq ediff-diff-options "-w")
+(setq ediff-split-window-function 'split-window-horizontally)
 (setq ediff-window-setup-function 'ediff-setup-windows-plain)
+;; (add-hook 'ediff-before-setup-hook 'new-frame)
+;; (add-hook 'ediff-quit-hook 'delete-frame)
 
 ;;; visit image files as images
 (auto-image-file-mode)
