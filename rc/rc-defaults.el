@@ -3,10 +3,19 @@
 
 ;;; make buffer auto switch command auto suggestions, also for find-file command
 (ido-mode 1)
+;;; enable edo-everywhere
+(ido-everywhere 1)
+;;; enable flx with ido
+(flx-ido-mode 1)
 ;;; make ido display choices vertically
 (setq ido-separator "\n")
 ;;; display any item that contains the chars you typed.
 (setq ido-enable-flex-matching t)
+;;; disable ido faces to see flx highlights
+(setq ido-use-faces nil)
+;;; make some thresholds for flx larger
+(setq flx-ido-threshold 10000)
+(setq gc-cons-threshold 20000000)
 
 ;;; auto show completions for execute-extended-command
 (icomplete-mode 1)
@@ -124,12 +133,14 @@
 ;;; custom filetype
 ;; (add-to-list 'auto-mode-alist '("Cask" . emacs-lisp-mode))
 ;; (add-to-list 'auto-mode-alist '("\\.sage\\'" . python-mode))
+(autoload 'pkgbuild-mode "pkgbuild-mode.el" "PKGBUILD mode." t)
 (mapcar
  (function (lambda (setting)
              (setq auto-mode-alist
                    (cons setting auto-mode-alist))))
  '(("Cask" . emacs-lisp-mode)
-   ("\\.sage\'" . python-mode)))
+   ("\\.sage\'" . python-mode)
+   ("/PKGBUILD$" . pkgbuild-mode)))
 
 
 ;;; user's information

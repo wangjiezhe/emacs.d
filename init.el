@@ -47,4 +47,9 @@
 (require 'rc-python)
 (require 'rc-ag)
 (require 'rc-sly)
-
+(require 'rc-tabbar-ruler)
+(require 'rc-projectile)
+(require 'rc-browse-kill-ring)
+(require 'rc-yafolding)
+(require 'rc-dictionary)
+(require 'rc-ecb)

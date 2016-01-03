@@ -53,6 +53,9 @@
 
 ;;; always show line numbers
 (global-linum-mode 1)
+;;; highlight line numbers
+(hlinum-activate)
+(setq linum-highlight-in-all-buffersp t)
 
 ;;; always show line and column number
 (line-number-mode 1)
@@ -78,6 +81,9 @@
 
 ;;; avoid mouse point gets too close to cursor
 (mouse-avoidance-mode 'animate)
+
+;;; set fill-column
+(setq default-fill-column 80)
 
 
 (provide 'rc-appearance)
