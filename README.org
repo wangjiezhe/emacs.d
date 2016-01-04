@@ -76,14 +76,62 @@ That's it!
 
 ** Packages from elpa/melpa
 
-| Name | Usage | Key bindings | Custom |
-|------+-------+--------------+--------|
-|      |       |              |        |
+| Name               | Usage | Key bindings | Custom |
+|--------------------+-------+--------------+--------|
+| ace-window         |       |              |        |
+| switch-window      |       |              |        |
+| window-numbering   |       |              |        |
+|--------------------+-------+--------------+--------|
+| bookmarks+         |       |              |        |
+| dired+             |       |              |        |
+| browse-kill-ring+  |       |              |        |
+| flx-ido            |       |              |        |
+| flx-isearch        |       |              |        |
+| smex               |       |              |        |
+| ag                 |       |              |        |
+| org                |       |              |        |
+|--------------------+-------+--------------+--------|
+| auctex             |       |              |        |
+| paredit            |       |              |        |
+| sly                |       |              |        |
+| elpy               |       |              |        |
+| ein                |       |              |        |
+|--------------------+-------+--------------+--------|
+| yasnippet          |       |              |        |
+| auto-yasnippet     |       |              |        |
+| company            |       |              |        |
+| ecb                |       |              |        |
+| ggtags             |       |              |        |
+| magit              |       |              |        |
+| tabbar-ruler       |       |              |        |
+| sr-speedbar        |       |              |        |
+| yafolding          |       |              |        |
+|--------------------+-------+--------------+--------|
+| gitconfig-mode     |       |              |        |
+| gitignore-mode     |       |              |        |
+| gitattributes-mode |       |              |        |
+| json-mode          |       |              |        |
+| julia-mode         |       |              |        |
+| lua-mode           |       |              |        |
+| pkgbuild-mode      |       |              |        |
+| racket-mode        |       |              |        |
+| yaml-mode          |       |              |        |
+| mmm-mode           |       |              |        |
+|--------------------+-------+--------------+--------|
+| youdao-dictionary  |       |              |        |
+| dictionary         |       |              |        |
+|--------------------+-------+--------------+--------|
+| chinese-pyim       |       |              |        |
+| fcitx              |       |              |        |
+|--------------------+-------+--------------+--------|
+| 2048-game          |       |              |        |
+|--------------------+-------+--------------+--------|
+| ...                |       |              |        |
 
 ** Packages from third party
 
-| Name | Usage | Key bindings | Custom | Source |
-|------+-------+--------------+--------+--------|
-|      |       |              |        |        |
+| Name   | Usage               | Key bindings | Custom |
+|--------+---------------------+--------------+--------|
+| [[https://code.google.com/p/unicad/][unicad]] | Auto detect charset |              |        |
 
 
