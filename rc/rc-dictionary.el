@@ -1,6 +1,6 @@
 ;;; Configuration for dictionarys
 
-(global-set-key (kbd "C-c d") 'youdao-dictionary-search-at-point+)
+(global-set-key (kbd "C-c d") 'youdao-dictionary-search-at-point)
 
 ;; Enable Cache
 (setq url-automatic-caching t)

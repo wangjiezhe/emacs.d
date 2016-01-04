@@ -76,62 +76,64 @@ That's it!
 
 ** Packages from elpa/melpa
 
-| Name               | Usage | Key bindings | Custom |
-|--------------------+-------+--------------+--------|
-| ace-window         |       |              |        |
-| switch-window      |       |              |        |
-| window-numbering   |       |              |        |
-|--------------------+-------+--------------+--------|
-| bookmarks+         |       |              |        |
-| dired+             |       |              |        |
-| browse-kill-ring+  |       |              |        |
-| flx-ido            |       |              |        |
-| flx-isearch        |       |              |        |
-| smex               |       |              |        |
-| ag                 |       |              |        |
-| org                |       |              |        |
-|--------------------+-------+--------------+--------|
-| auctex             |       |              |        |
-| paredit            |       |              |        |
-| sly                |       |              |        |
-| elpy               |       |              |        |
-| ein                |       |              |        |
-|--------------------+-------+--------------+--------|
-| yasnippet          |       |              |        |
-| auto-yasnippet     |       |              |        |
-| company            |       |              |        |
-| ecb                |       |              |        |
-| ggtags             |       |              |        |
-| magit              |       |              |        |
-| tabbar-ruler       |       |              |        |
-| sr-speedbar        |       |              |        |
-| yafolding          |       |              |        |
-|--------------------+-------+--------------+--------|
-| gitconfig-mode     |       |              |        |
-| gitignore-mode     |       |              |        |
-| gitattributes-mode |       |              |        |
-| json-mode          |       |              |        |
-| julia-mode         |       |              |        |
-| lua-mode           |       |              |        |
-| pkgbuild-mode      |       |              |        |
-| racket-mode        |       |              |        |
-| yaml-mode          |       |              |        |
-| mmm-mode           |       |              |        |
-|--------------------+-------+--------------+--------|
-| youdao-dictionary  |       |              |        |
-| dictionary         |       |              |        |
-|--------------------+-------+--------------+--------|
-| chinese-pyim       |       |              |        |
-| fcitx              |       |              |        |
-|--------------------+-------+--------------+--------|
-| 2048-game          |       |              |        |
-|--------------------+-------+--------------+--------|
-| ...                |       |              |        |
+| Name               | Usage                         | Key bindings   |
+|--------------------+-------------------------------+----------------|
+| /                  | <                             |                |
+| ace-window         | quickly switch windows        | =M-p number=   |
+| switch-window      | ---″---                       | =C-x o number= |
+| window-numbering   | ---″---                       | =M-number=     |
+|--------------------+-------------------------------+----------------|
+| bookmarks+         | enhance bookmarks.el          |                |
+| dired+             | enhance dired.el              |                |
+| browse-kill-ring+  | browse kill ring              | =C-y=          |
+| flx-ido            | enhance ido                   |                |
+| flx-isearch        | enhance isearch               | =C-M-s=        |
+| smex               | enhance M-x                   | =M-x=          |
+| ag                 | frontend to ag                |                |
+| org                | newer version                 |                |
+|--------------------+-------------------------------+----------------|
+| auctex             | for LaTeX                     |                |
+| paredit            | for Lisp/Scheme/Clojure       |                |
+| sly                | for Common Lisp               |                |
+| elpy               | for Python                    |                |
+| ein                | for Jupyter                   |                |
+|--------------------+-------------------------------+----------------|
+| yasnippet          | template system               |                |
+| auto-yasnippet     | more advanced                 | =M-y=          |
+| company            | auto completion               |                |
+| ecb                | code browser                  |                |
+| ggtags             | frontend to GNU GLOBAL        |                |
+| magit              | interacting with git          |                |
+| tabbar-ruler       | show tabs and ruler           |                |
+| sr-speedbar        | same frame speedbar           |                |
+| yafolding          | folding                       |                |
+|--------------------+-------------------------------+----------------|
+| gitconfig-mode     | minor mode                    |                |
+| gitignore-mode     | ---″---                       |                |
+| gitattributes-mode | ---″---                       |                |
+| json-mode          | ---″---                       |                |
+| julia-mode         | ---″---                       |                |
+| lua-mode           | ---″---                       |                |
+| pkgbuild-mode      | ---″---                       |                |
+| racket-mode        | ---″---                       |                |
+| yaml-mode          | ---″---                       |                |
+| mmm-mode           | multi major modes in one file |                |
+|--------------------+-------------------------------+----------------|
+| youdao-dictionary  | frontend to Youdao api        | =C-c d=        |
+| dictionary         | frontend to dictd             |                |
+|--------------------+-------------------------------+----------------|
+| chinese-pyim       | Chinese Pinyin Input Method   | =C-\=          |
+| fcitx              | work better with fcitx        |                |
+|--------------------+-------------------------------+----------------|
+| 2048-game          | 2048 game                     |                |
+|--------------------+-------------------------------+----------------|
+| ...                |                               |                |
 
 ** Packages from third party
 
-| Name   | Usage               | Key bindings | Custom |
-|--------+---------------------+--------------+--------|
-| [[https://code.google.com/p/unicad/][unicad]] | Auto detect charset |              |        |
+| Name   | Usage               | Key bindings |
+|--------+---------------------+--------------|
+| /      | <                   |              |
+| [[https://code.google.com/p/unicad/][unicad]] | Auto detect charset |              |
 
 
