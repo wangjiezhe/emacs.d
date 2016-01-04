@@ -20,6 +20,20 @@ Personal informations can be customed in =rc/rc-defaults.el=.
 
 That's it!
 
+** Document Tree
+
+- .emacs.d/
+  - init.el: bootstrap for emacs configuration
+  - Cask: Cask file
+  - rc/: configuration files
+    - rc-appearance.el: custom appearance
+    - rc-defaults.el: custom default settings
+    - ...
+  - site-lisps/: emacs lisp plugin third party
+  - snippets/: custom snippets
+  - themes/: custom themes
+
+
 ** Appearance
 
 - Theme: [[https://github.com/hbin/molokai-theme][molokai theme]] which is differently from the one in melpa
