@@ -54,3 +54,7 @@
 (require 'rc-yafolding)
 (require 'rc-dictionary)
 (require 'rc-ecb)
+(require 'rc-multiple-cursor)
+
+;;; site-lisps
+(require 'unicad)                       ; auto detect charset

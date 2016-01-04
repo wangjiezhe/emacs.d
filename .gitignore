@@ -3,6 +3,7 @@
 *~
 .#*
 *#
+*.elc
 
 !.gitignore
 !init.el
