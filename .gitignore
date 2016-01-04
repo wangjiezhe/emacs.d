@@ -1,14 +1,16 @@
+# mode: -*- gitignore -*-
 /*
-
-*~
-.#*
-*#
-*.elc
 
 !.gitignore
 !init.el
 !Cask
+!README*
 !rc/
 !snippets/
 !themes/
-!site-lisps
+!site-lisps/
+
+*~
+.\#*
+\#*\#
+*.elc

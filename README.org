@@ -1,0 +1,78 @@
+* My Emacs Configuration
+
+** Package System
+
+I use [[https://github.com/cask/cask][Cask]] and [[https://github.com/rdallasgray/pallet][pallet]] to manage my packages.
+
+- *Cask*: easy to manage dependencies.
+- *pallet*: create and synchronize Cask file with Emacs's default package system automatically.
+
+** Usage
+
+First, install cask, Using
+
+#+BEGIN_SRC shell
+curl -fsSL https://raw.githubusercontent.com/cask/cask/master/go | python
+#+END_SRC
+
+This will install =Cask= in ~\~/.cask/~. Then add ~\~/.cask/bin~ into =$PATH=.
+
+After that, clone the repo, and then use command ~cask install~ in the directory.
+
+Personal informations can be customed in ~rc/rc-defaults.el~.
+
+That's it!
+
+** Appearance
+
+- Theme: [[https://github.com/hbin/molokai-theme][molokai theme]] which is differently from the one in melpa
+- Font: Adobe Source Code Pro Semibold, size=13
+- title: show buffer name
+- bars:
+  - diable tool bar
+  - only show menu bar and scroll bar in GUI mode
+- mode line:
+  - show directory name when open files with same names
+  - show line number
+- show line number on the left
+- highlight:
+  - current line and line number
+  - matching brackets, with rainbow color
+- make soft wrap
+- activate prettify-symbols mode
+- set fill-column to 80
+
+** Default settings
+
+- global active mode:
+  - ido and flx-ido
+  - icomplete
+  - recetf
+  - electric-pair
+  - ibuffers
+- "utf-8" as default encoding
+- save cursor place
+- save bookmark immediately
+- disable tab indentation
+- synchronize with system clipboard
+- larger kill-ring
+- visible bell
+- enable some disabled function
+- use version control in backup
+- add =-diff= commandline option
+- custom filetype detection
+- user's information
+
+** Packages from elpa/melpa
+
+| Name | Usage | Key bindings | Custom |
+|------+-------+--------------+--------|
+|      |       |              |        |
+
+** Packages from third party
+
+| Name | Usage | Key bindings | Custom | Source |
+|------+-------+--------------+--------+--------|
+|      |       |              |        |        |
+
+
