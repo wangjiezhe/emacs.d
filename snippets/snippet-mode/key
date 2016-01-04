@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# contributor: Jiezhe Wang (wangjiezhe@gmail.com)
+# name: key
+# key: key
+# --
+# key: $0
