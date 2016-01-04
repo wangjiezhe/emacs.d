@@ -22,9 +22,13 @@
 
 ;;; keep a list of recent open files
 (recentf-mode 1)
+(setq recentf-max-menu-items 25)
+;; (setq recentf-max-saved-items 30)
+;; (setq recentf-keep '(file-remote-p file-readable-p))
+(global-set-key (kbd "C-x C-r") 'recentf-open-files)
 
 ;;; auto close bracket insertion
-(electric-pair-mode 1)
+;; (electric-pair-mode 1)
 
 ;;; make ibuffer default
 (defalias 'list-buffers 'ibuffer)
@@ -33,6 +37,9 @@
 ;;; set UTF-8 as default file encoding
 (set-language-environment "UTF-8")
 (set-default-coding-systems 'utf-8)
+(define-coding-system-alias 'UTF-8 'utf-8)
+(define-coding-system-alias 'utf8 'utf-8)
+(define-coding-system-alias 'UTF8 'utf-8)
 
 
 ;;; stop creating those backup~ files
@@ -123,18 +130,18 @@
 (put 'LaTeX-hide-environment 'disabled nil)
 
 ;;; use version control when save backups
-(setq version-control t)
-(setq kept-new-versions 3)
-(setq delete-old-versions t)
-(setq kept-old-versions 2)
-(setq dired-kept-versions 1)
+;; (setq version-control t)
+;; (setq kept-new-versions 3)
+;; (setq delete-old-versions t)
+;; (setq kept-old-versions 2)
+;; (setq dired-kept-versions 1)
 
 
 ;;; custom filetype
 ;; (add-to-list 'auto-mode-alist '("Cask" . emacs-lisp-mode))
 ;; (add-to-list 'auto-mode-alist '("\\.sage\\'" . python-mode))
 (autoload 'pkgbuild-mode "pkgbuild-mode.el" "PKGBUILD mode." t)
-(mapcar
+(mapc
  (function (lambda (setting)
              (setq auto-mode-alist
                    (cons setting auto-mode-alist))))

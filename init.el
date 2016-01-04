@@ -29,14 +29,15 @@
 (require 'rc-isearch)
 (require 'rc-org)
 
+;;; site-lisps
+(require 'unicad)                       ; auto detect charset
+
 ;;; packages
 (require 'rc-smex)
 (require 'rc-dired)
 (require 'rc-undo-tree)
-(require 'rc-paredit)
+(require 'rc-paren)
 (require 'rc-browser)
-(require 'rc-yasnippets)
-(require 'rc-auto-yasnippet)
 (require 'rc-chinese-pyim)
 (require 'rc-magit)
 (require 'rc-company)
@@ -55,6 +56,5 @@
 (require 'rc-dictionary)
 (require 'rc-ecb)
 (require 'rc-multiple-cursor)
-
-;;; site-lisps
-(require 'unicad)                       ; auto detect charset
+(require 'rc-yasnippets)
+(require 'rc-auto-yasnippet)

@@ -83,7 +83,7 @@
 (mouse-avoidance-mode 'animate)
 
 ;;; set fill-column
-(setq default-fill-column 80)
+(setq fill-column 80)
 
 
 (provide 'rc-appearance)

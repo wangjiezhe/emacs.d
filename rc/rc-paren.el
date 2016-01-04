@@ -1,6 +1,6 @@
-;; Configuration for paredit-mode
+;;; Configuration for pare1nthesis
 
-;; autoload paredit in lisp modes
+;;; autoload paredit in lisp modes
 (add-hook 'emacs-lisp-mode-hook #'enable-paredit-mode)
 (add-hook 'eval-expression-minibuffer-setup-hook #'enable-paredit-mode)
 (add-hook 'ielm-mode-hook #'enable-paredit-mode)
@@ -9,4 +9,8 @@
 (add-hook 'scheme-mode-hook #'enable-paredit-mode)
 (add-hook 'racket-mode-hook #'enable-paredit-mode)
 
-(provide 'rc-paredit)
+;;; enable smartparens-mode
+(smartparens-global-mode 1)
+(require 'smartparens-config)
+
+(provide 'rc-paren)
