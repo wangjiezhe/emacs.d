@@ -34,6 +34,9 @@
 (set-language-environment "UTF-8")
 (set-default-coding-systems 'utf-8)
 
+;;; use unicad to auto detect charset
+(require 'unicad)
+
 
 ;;; stop creating those backup~ files
 ;; setq make-backup-files nil)

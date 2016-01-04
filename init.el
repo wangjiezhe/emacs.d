@@ -2,6 +2,7 @@
 
 ;; (add-to-list 'load-path (expand-file-name "~/.cask"))
 (add-to-list 'load-path (expand-file-name "rc" user-emacs-directory))
+(add-to-list 'load-path (expand-file-name "site-lisps" user-emacs-directory))
 
 ;;; use cask and pallet to manage packages
 (require 'cask (expand-file-name "~/.cask/cask.el"))
