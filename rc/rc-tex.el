@@ -9,9 +9,12 @@
 
 ;;; enable RefTeX
 (add-hook 'LaTeX-mode-hook 'turn-on-reftex) ; with AUCTeX LaTeX mode
-(add-hook 'latex-mode-hook 'turn-on-reftex) ; with Emacs latex mode
+;; (add-hook 'latex-mode-hook 'turn-on-reftex) ; with Emacs latex mode
 
 ;;; integrate RefTeX with AUCTeX
 (setq reftex-plug-into-AUCTeX t)
+
+;;; enable latex-extra
+(add-hook 'LaTeX-mode-hook #'latex-extra-mode)
 
 (provide 'rc-tex)
