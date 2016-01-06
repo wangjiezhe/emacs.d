@@ -20,7 +20,8 @@
 ;;   (load-theme 'material t))
 
 ;;; set a default font
-(when (member "Source Code Pro" (font-family-list))
+(when (and (display-graphic-p)
+           (member "Source Code Pro" (font-family-list)))
   (set-face-attribute 'default nil :font "Source Code Pro Semibold")
   (add-to-list 'initial-frame-alist '(font . "Source Code Pro Semibold-13"))
   (add-to-list 'default-frame-alist '(font . "Source Code Pro Semibold-13")))
@@ -77,13 +78,13 @@
 (global-visual-line-mode 1)
 
 ;;; display "lambda" as "λ"
-(global-prettify-symbols-mode 1)
+;; (global-prettify-symbols-mode 1)
 
 ;;; avoid mouse point gets too close to cursor
 (mouse-avoidance-mode 'animate)
 
 ;;; set fill-column
-(setq fill-column 80)
+;; (setq fill-column 80)
 
 
 (provide 'rc-appearance)

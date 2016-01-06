@@ -10,7 +10,9 @@
 (add-hook 'racket-mode-hook #'enable-paredit-mode)
 
 ;;; enable smartparens-mode
-(smartparens-global-mode 1)
+(smartparens-global-strict-mode 1)
 (require 'smartparens-config)
+;; (--each '("python-mode" "python")
+;;   (eval-after-load it '(electric-pair-mode -1)))
 
 (provide 'rc-paren)

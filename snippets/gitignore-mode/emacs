@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# contributor: Jiezhe Wang (wangjiezhe@gmail.com)
+# name: emacs
+# key: emacs
+# --
+*~
+\#*\#
+.\#*

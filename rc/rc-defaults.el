@@ -29,6 +29,10 @@
 
 ;;; auto close bracket insertion
 ;; (electric-pair-mode 1)
+;; (setq electric-pair-pairs '(
+;;                             (?\" . ?\")
+;;                             (?\{ . ?\})
+;;                             ))
 
 ;;; make ibuffer default
 (defalias 'list-buffers 'ibuffer)
@@ -121,6 +125,9 @@
 
 ;;; enable Font-Lock mode to highlight
 (global-font-lock-mode)
+
+;;; auto revert
+(global-auto-revert-mode)
 
 ;;; enable some diabled function
 (put 'set-goal-column 'disabled nil)

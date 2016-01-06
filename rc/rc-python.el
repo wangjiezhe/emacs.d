@@ -17,6 +17,11 @@
   (setq elpy-modules (delq 'elpy-module-flymake elpy-modules))
   (add-hook 'elpy-mode-hook 'flycheck-mode))
 
+(add-hook 'elpy-mode-hook
+          (lambda ()
+            (setq fill-column 80)
+            (auto-fill-mode 1)))
+
 ;;; company-jedi
 ;; (defun my-python-mode-hook ()
 ;;   (add-to-list 'company-backends 'company-jedi))
