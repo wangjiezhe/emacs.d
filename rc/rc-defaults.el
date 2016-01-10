@@ -47,7 +47,7 @@
 
 
 ;;; stop creating those backup~ files
-;; setq make-backup-files nil)
+;; (setq make-backup-files nil)
 
 ;;; save bookmark immediately when changed
 (setq bookmark-save-flag 1)
@@ -143,6 +143,8 @@
 ;; (setq kept-old-versions 2)
 ;; (setq dired-kept-versions 1)
 
+;;; enable editorconfig mode
+(editorconfig-mode 1)
 
 ;;; custom filetype
 ;; (add-to-list 'auto-mode-alist '("Cask" . emacs-lisp-mode))
@@ -154,7 +156,8 @@
                    (cons setting auto-mode-alist))))
  '(("Cask" . emacs-lisp-mode)
    ("\\.sage\'" . python-mode)
-   ("/PKGBUILD$" . pkgbuild-mode)))
+   ("/PKGBUILD$" . pkgbuild-mode)
+   ("\\.mkd\'" . markdown-mode)))
 
 
 ;;; user's information

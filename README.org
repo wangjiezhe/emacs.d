@@ -1,8 +1,18 @@
 * My Emacs Configuration
 
+** Table of Contents                                                    :TOC:
+ - [[#my-emacs-configuration][My Emacs Configuration]]
+   - [[#package-system][Package System]]
+   - [[#usage][Usage]]
+   - [[#document-tree][Document Tree]]
+   - [[#appearance][Appearance]]
+   - [[#default-settings][Default settings]]
+   - [[#packages-from-elpamelpa][Packages from elpa/melpa]]
+   - [[#packages-from-third-party][Packages from third party]]
+
 ** Package System
 
-I use [[https://github.com/cask/cask][Cask]] and [[https://github.com/rdallasgray/pallet][pallet]] to manage my packages.
+I use [[https://github.com/cask/cask][Cask]] and [[https://github.com/rdallasgray/pallet][pallet]] to manage my packages, and [[https://github.com/aborn/popkit-elpa][popkit-elpa]] as mepla mirror.
 
 - *Cask*: easy to manage dependencies.
 - *pallet*: create and synchronize Cask file with Emacs's default package system automatically.
