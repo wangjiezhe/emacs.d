@@ -47,7 +47,7 @@
 
 
 ;;; stop creating those backup~ files
-;; (setq make-backup-files nil)
+(setq make-backup-files nil)
 
 ;;; save bookmark immediately when changed
 (setq bookmark-save-flag 1)
