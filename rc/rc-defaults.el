@@ -17,15 +17,28 @@
 (setq flx-ido-threshold 10000)
 (setq gc-cons-threshold 20000000)
 
+;;; reopen file with sudo
+(defun sudo-edit (&optional arg)
+  "Edit currently visited file as root.
+
+With a prefix ARG prompt for a file to visit.
+Will also prompt for a file to visit if current
+buffer is not visiting a file."
+  (interactive "P")
+  (if (or arg (not buffer-file-name))
+      (find-file (concat "/sudo:root@localhost:"
+                         (ido-read-file-name "Find file(as root): ")))
+    (find-alternate-file (concat "/sudo:root@localhost:" buffer-file-name))))
+
+;;; auto open read-only file with sudo
+;; (defadvice ido-find-file (after find-file-sudo activate)
+;;   "Find file as root if necessary."
+;;   (unless (and buffer-file-name
+;;                (file-writable-p buffer-file-name))
+;;     (find-alternate-file (concat "/sudo:root@localhost:" buffer-file-name))))
+
 ;;; auto show completions for execute-extended-command
 (icomplete-mode 1)
-
-;;; keep a list of recent open files
-(recentf-mode 1)
-(setq recentf-max-menu-items 25)
-;; (setq recentf-max-saved-items 30)
-;; (setq recentf-keep '(file-remote-p file-readable-p))
-(global-set-key (kbd "C-x C-r") 'recentf-open-files)
 
 ;;; auto close bracket insertion
 ;; (electric-pair-mode 1)
@@ -156,8 +169,10 @@
                    (cons setting auto-mode-alist))))
  '(("Cask" . emacs-lisp-mode)
    ("\\.sage\'" . python-mode)
-   ("/PKGBUILD$" . pkgbuild-mode)
-   ("\\.mkd\'" . markdown-mode)))
+   ("PKGBUILD" . pkgbuild-mode)
+   ("\\.mkd\'" . markdown-mode)
+   ("yaourtrc" . conf-mode)
+   ("npmrc" . conf-mode)))
 
 
 ;;; user's information

@@ -15,4 +15,8 @@
 (defvar yas-key-syntaxes
   (list "w_" "w_." "w_.()" #'yas-try-key-from-whitespace))
 
+;;; auto-yasnippets
+(global-set-key (kbd "s-w") #'aya-create)
+(global-set-key (kbd "s-y") #'aya-expand)
+
 (provide 'rc-yasnippets)

@@ -1,5 +1,5 @@
 (source "gnu" "http://elpa.gnu.org/packages/")
-(source "melpa" "http://elpa.popkit.org/packages/")
+(source "melpa" "http://melpa.milkbox.net/packages/")
 
 (depends-on "2048-game")
 (depends-on "ace-window")
@@ -98,6 +98,7 @@
 (depends-on "ox-reveal")
 (depends-on "ox-rst")
 (depends-on "package-build")
+(depends-on "pacmacs")
 (depends-on "pallet")
 (depends-on "pandoc-mode")
 (depends-on "paredit")
@@ -138,3 +139,4 @@
 (depends-on "yasnippet")
 (depends-on "youdao-dictionary")
 ;;;pallet-ignore
+;; (source "melpa" "http://elpa.popkit.org/packages/")

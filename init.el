@@ -26,18 +26,20 @@
 ;;; built-in
 (require 'rc-appearance)                ; change the appearance/gui
 (require 'rc-defaults)                  ; change the default settings
+(require 'rc-recentf)
 (require 'rc-isearch)
 (require 'rc-org)
+(require 'rc-browser)
 
 ;;; site-lisps
 (require 'unicad)                       ; auto detect charset
+;; (require 'sudo-save)
 
 ;;; packages
 (require 'rc-smex)
 (require 'rc-dired)
 (require 'rc-undo-tree)
 (require 'rc-paren)
-(require 'rc-browser)
 (require 'rc-chinese-pyim)
 (require 'rc-magit)
 (require 'rc-company)
@@ -57,7 +59,6 @@
 (require 'rc-ecb)
 (require 'rc-multiple-cursor)
 (require 'rc-yasnippets)
-(require 'rc-auto-yasnippet)
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
