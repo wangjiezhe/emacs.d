@@ -33,7 +33,6 @@
 
 ;;; site-lisps
 (require 'unicad)                       ; auto detect charset
-;; (require 'sudo-save)
 
 ;;; packages
 (require 'rc-smex)

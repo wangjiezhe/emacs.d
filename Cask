@@ -1,5 +1,5 @@
 (source "gnu" "http://elpa.gnu.org/packages/")
-(source "melpa" "http://melpa.milkbox.net/packages/")
+(source "melpa" "http://elpa.popkit.org/packages/")
 
 (depends-on "2048-game")
 (depends-on "ace-window")
@@ -32,6 +32,8 @@
 (depends-on "dracula-theme")
 (depends-on "ecb")
 (depends-on "editorconfig")
+(depends-on "editorconfig-core")
+(depends-on "editorconfig-fnmatch")
 (depends-on "ein")
 (depends-on "elpy")
 (depends-on "epc")
@@ -139,4 +141,4 @@
 (depends-on "yasnippet")
 (depends-on "youdao-dictionary")
 ;;;pallet-ignore
-;; (source "melpa" "http://elpa.popkit.org/packages/")
+;; (source "melpa" "http://melpa.milkbox.net/packages/")

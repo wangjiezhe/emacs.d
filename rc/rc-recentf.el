@@ -19,7 +19,8 @@
   (cond ((null filelist) (nreverse savelist))
         ((string-prefix-p "/sudo:" (car filelist))
          (remove-sudo-T (cdr filelist) savelist))
-        (t (remove-sudo-T (cdr filelist) (cons (car filelist) savelist)))))
+        (t (remove-sudo-T (cdr filelist)
+                          (cons (car filelist) savelist)))))
 
 (defun remove-sudo-in-recentf ()
   (setq recentf-list
