@@ -159,6 +159,10 @@ buffer is not visiting a file."
 ;;; enable editorconfig mode
 (editorconfig-mode 1)
 
+;;; show details in dired mode, and enable dired+ mode
+(setq diredp-hide-details-initially-flag nil)
+(require 'dired+)
+
 ;;; custom filetype
 ;; (add-to-list 'auto-mode-alist '("Cask" . emacs-lisp-mode))
 ;; (add-to-list 'auto-mode-alist '("\\.sage\\'" . python-mode))

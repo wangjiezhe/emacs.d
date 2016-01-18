@@ -36,7 +36,6 @@
 
 ;;; packages
 (require 'rc-smex)
-(require 'rc-dired)
 (require 'rc-undo-tree)
 (require 'rc-paren)
 (require 'rc-chinese-pyim)
@@ -45,7 +44,6 @@
 (require 'rc-git-gutter)
 (require 'rc-avy)
 (require 'rc-window)
-(require 'rc-bookmark)
 (require 'rc-tex)
 (require 'rc-python)
 (require 'rc-ag)
