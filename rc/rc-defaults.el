@@ -163,9 +163,10 @@ buffer is not visiting a file."
 (setq diredp-hide-details-initially-flag nil)
 (require 'dired+)
 
-;;; use xah-elisp-mode
-(xah-elisp-mode)
-(highlight-defined-mode 1)
+;;; better highlight for elisp
+;; (xah-elisp-mode)
+;; (highlight-defined-mode 1)
+(add-hook 'emacs-lisp-mode-hook 'highlight-defined-mode)
 
 ;;; custom filetype
 ;; (add-to-list 'auto-mode-alist '("Cask" . emacs-lisp-mode))
