@@ -163,6 +163,9 @@ buffer is not visiting a file."
 (setq diredp-hide-details-initially-flag nil)
 (require 'dired+)
 
+;;; use default bookmark file
+(setq bmkp-last-as-first-bookmark-file nil)
+
 ;;; better highlight for elisp
 ;; (xah-elisp-mode)
 ;; (highlight-defined-mode 1)
@@ -177,11 +180,16 @@ buffer is not visiting a file."
              (setq auto-mode-alist
                    (cons setting auto-mode-alist))))
  '(("Cask" . emacs-lisp-mode)
-   ("\\.sage\'" . python-mode)
+   ("\\.sage\\'" . python-mode)
    ("PKGBUILD" . pkgbuild-mode)
-   ("\\.mkd\'" . markdown-mode)
-   ("yaourtrc" . conf-mode)
-   ("npmrc" . conf-mode)))
+   ("\\.mkd\\'" . markdown-mode)
+   ("rc\\'" . conf-mode)
+   ("conf\\'" . conf-mode)
+   ("\\.repo\\'" . conf-mode)
+   ("\\.tm\\'" . xml-mode)
+   ("\\.ts\\'" . xml-mode)
+   ("\\.pac\\'" . javascript-mode)
+   ))
 
 
 ;;; user's information

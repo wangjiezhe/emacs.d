@@ -4,6 +4,7 @@
  - [[#my-emacs-configuration][My Emacs Configuration]]
    - [[#package-system][Package System]]
    - [[#usage][Usage]]
+   - [[#need-more-configuration][Need more configuration]]
    - [[#document-tree][Document Tree]]
    - [[#appearance][Appearance]]
    - [[#default-settings][Default settings]]
@@ -29,6 +30,20 @@ After that, clone the repo, and then run command =cask init= and  =cask install=
 Personal informations can be customed in =rc/rc-defaults.el=.
 
 That's it!
+
+** TODO Need more configuration
+
+- [ ] major mode for R
+- [ ] better highlight for elisp
+- [ ] delete select text without using cut but delete
+- [ ] better performance for bookmark
+- [ ] major mode for mathematica
+- [ ] major mode for matlab/octave
+- [ ] major mode for tpp (text ppt)
+- [ ] major mode for TeXmacs (current alternative is xml-mode)
+- [ ] highlight TODO/FIXME/...
+- [ ] better highlight for change log
+- [ ] difference between fundamental mode and text mode
 
 ** Document Tree
 
