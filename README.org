@@ -41,9 +41,12 @@ That's it!
 - [ ] major mode for matlab/octave
 - [ ] major mode for tpp (text ppt)
 - [ ] major mode for TeXmacs (current alternative is xml-mode)
-- [ ] highlight TODO/FIXME/...
+- [ ] highlight TODO/FIXME/... in all files
 - [ ] better highlight for change log
 - [ ] difference between fundamental mode and text mode
+- [ ] nested note (footnote or side comment)
+- [ ] include other files in org mode
+- [ ] use elisp in org mode
 
 ** Document Tree
 
