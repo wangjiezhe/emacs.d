@@ -4,7 +4,7 @@
  - [[#my-emacs-configuration][My Emacs Configuration]]
    - [[#package-system][Package System]]
    - [[#usage][Usage]]
-   - [[#need-more-configuration][Need more configuration]]
+   - [[#need-more-configuration-and-knowledge][Need more configuration and knowledge]]
    - [[#document-tree][Document Tree]]
    - [[#appearance][Appearance]]
    - [[#default-settings][Default settings]]
@@ -31,7 +31,7 @@ Personal informations can be customed in =rc/rc-defaults.el=.
 
 That's it!
 
-** TODO Need more configuration
+** TODO Need more configuration and knowledge
 
 - [ ] major mode for R
 - [ ] better highlight for elisp
@@ -47,6 +47,9 @@ That's it!
 - [ ] nested note (footnote or side comment)
 - [ ] include other files in org mode
 - [ ] use elisp in org mode
+- [ ] an independent emacs lisp interactive shell
+- [ ] undefine function in elisp
+- [ ] start time waver between about 3s and 8s
 
 ** Document Tree
 
