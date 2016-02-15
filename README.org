@@ -50,6 +50,8 @@ That's it!
 - [ ] an independent emacs lisp interactive shell
 - [ ] undefine function in elisp
 - [ ] start time waver between about 3s and 8s
+- [ ] alias in eshell
+- [ ] better highlight for shell script (e.g. shell command, pip, variables, etc.)
 
 ** Document Tree
 
