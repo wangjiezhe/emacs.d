@@ -182,6 +182,7 @@ buffer is not visiting a file."
  '(("Cask" . emacs-lisp-mode)
    ("\\.sage\\'" . python-mode)
    ("PKGBUILD" . pkgbuild-mode)
+   ("\\.install\\'" . sh-mode)
    ("\\.mkd\\'" . markdown-mode)
    ("rc\\'" . conf-mode)
    ("conf\\'" . conf-mode)
