@@ -52,6 +52,7 @@ That's it!
 - [ ] start time waver between about 3s and 8s
 - [ ] alias in eshell
 - [ ] better highlight for shell script (e.g. shell command, pip, variables, etc.)
+- [ ] better highlight for conky configuration file
 
 ** Document Tree
 
