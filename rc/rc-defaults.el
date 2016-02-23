@@ -171,6 +171,10 @@ buffer is not visiting a file."
 ;; (highlight-defined-mode 1)
 (add-hook 'emacs-lisp-mode-hook 'highlight-defined-mode)
 
+;;; Keep an undo history
+(require 'undohist)
+(undohist-initialize)
+
 ;;; custom filetype
 ;; (add-to-list 'auto-mode-alist '("Cask" . emacs-lisp-mode))
 ;; (add-to-list 'auto-mode-alist '("\\.sage\\'" . python-mode))
@@ -193,6 +197,7 @@ buffer is not visiting a file."
    ("\\.tm\\'" . xml-mode)
    ("\\.ts\\'" . xml-mode)
    ("\\.pac\\'" . javascript-mode)
+   ("\\.conkyrc\\'" . lua-mode)
    ))
 
 

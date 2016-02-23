@@ -33,26 +33,27 @@ That's it!
 
 ** TODO Need more configuration and knowledge
 
-- [ ] major mode for R
+- [X] major mode for R
 - [ ] better highlight for elisp
 - [ ] delete select text without using cut but delete
 - [ ] better performance for bookmark
-- [ ] major mode for mathematica
-- [ ] major mode for matlab/octave
+- [X] major mode for mathematica
+- [X] major mode for matlab/octave
 - [ ] major mode for tpp (text ppt)
 - [ ] major mode for TeXmacs (current alternative is xml-mode)
-- [ ] highlight TODO/FIXME/... in all files
+- [X] highlight TODO/FIXME/... in all files
 - [ ] better highlight for change log
 - [ ] difference between fundamental mode and text mode
 - [ ] nested note (footnote or side comment)
 - [ ] include other files in org mode
 - [ ] use elisp in org mode
-- [ ] an independent emacs lisp interactive shell
+- [ ] an independent emacs lisp interactive shell (multi-eshell?)
 - [ ] undefine function in elisp
 - [ ] start time waver between about 3s and 8s
 - [ ] alias in eshell
 - [ ] better highlight for shell script (e.g. shell command, pip, variables, etc.)
-- [ ] better highlight for conky configuration file
+- [X] better highlight for conky configuration file
+- [X] better revision history
 
 ** Document Tree
 

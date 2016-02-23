@@ -6,7 +6,7 @@
 
 ;;; use emacs behind proxy
 (setq url-proxy-services
-      '(("no-proxy" . "^\\(localhost\\|10.*\\)")
+      '(("no-proxy" . "^\\(localhost\\|10.*\\|elpa.popkit.org\\)")
         ("http" . "127.0.0.1:8087")
         ("https" . "127.0.0.1:8087")))
 
