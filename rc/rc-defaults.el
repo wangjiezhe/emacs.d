@@ -175,6 +175,10 @@ buffer is not visiting a file."
 (require 'undohist)
 (undohist-initialize)
 
+;;; Track commands frequency
+(keyfreq-mode 1)
+(keyfreq-autosave-mode 1)
+
 ;;; custom filetype
 ;; (add-to-list 'auto-mode-alist '("Cask" . emacs-lisp-mode))
 ;; (add-to-list 'auto-mode-alist '("\\.sage\\'" . python-mode))
