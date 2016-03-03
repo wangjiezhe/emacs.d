@@ -51,18 +51,6 @@ buffer is not visiting a file."
 (defalias 'list-buffers 'ibuffer)
 
 
-;;; set UTF-8 as default file encoding
-(set-language-environment "UTF-8")
-(set-default-coding-systems 'utf-8)
-(setq locale-coding-system 'utf-8)
-(set-terminal-coding-system 'utf-8)
-(set-selection-coding-system 'utf-8)
-(prefer-coding-system 'utf-8)
-(define-coding-system-alias 'UTF-8 'utf-8)
-(define-coding-system-alias 'utf8 'utf-8)
-(define-coding-system-alias 'UTF8 'utf-8)
-
-
 ;;; stop creating those backup~ files
 (setq make-backup-files nil)
 
@@ -75,7 +63,7 @@ buffer is not visiting a file."
 
 
 ;;; disable tab indentation by default
-(setq-default indent-tabs-mode nil)
+;; (setq-default indent-tabs-mode nil)
 
 ;;; use hippie expand instead of dbbrev-expand
 (global-set-key (kbd "M-/") 'hippie-expand)

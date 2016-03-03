@@ -4,6 +4,15 @@
 (add-to-list 'load-path (expand-file-name "rc" user-emacs-directory))
 (add-to-list 'load-path (expand-file-name "site-lisps" user-emacs-directory))
 
+;;; set UTF-8 as default file encoding
+(set-language-environment "UTF-8")
+;; (set-default-coding-systems 'utf-8)
+;; (set-default buffer-file-coding-system 'utf-8)
+(prefer-coding-system 'utf-8)
+(define-coding-system-alias 'UTF-8 'utf-8)
+(define-coding-system-alias 'utf8 'utf-8)
+(define-coding-system-alias 'UTF8 'utf-8)
+
 ;;; use emacs behind proxy
 (setq url-proxy-services
       '(("no-proxy" . "^\\(localhost\\|10.*\\|elpa.popkit.org\\)")
@@ -38,7 +47,7 @@
 (require 'rc-browser)
 
 ;;; site-lisps
-(require 'unicad)                       ; auto detect charset
+;; (require 'unicad)                       ; auto detect charset
 
 ;;; packages
 (require 'rc-smex)
