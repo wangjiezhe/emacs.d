@@ -63,7 +63,7 @@ buffer is not visiting a file."
 
 
 ;;; disable tab indentation by default
-;; (setq-default indent-tabs-mode nil)
+(setq-default indent-tabs-mode nil)
 
 ;;; use hippie expand instead of dbbrev-expand
 (global-set-key (kbd "M-/") 'hippie-expand)
@@ -166,6 +166,7 @@ buffer is not visiting a file."
 ;;; Keep an undo history
 (require 'undohist)
 (undohist-initialize)
+(setq undohist-ignored-files '("COMMIT_EDITMSG"))
 
 ;;; Track commands frequency
 (keyfreq-mode 1)
