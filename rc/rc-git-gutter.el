@@ -7,7 +7,7 @@
 (git-gutter:linum-setup)
 
 ;; key bindings
-(global-set-key (kbd "C-x C-g") 'git-gutter:toggle)
+;; (global-set-key (kbd "C-x C-g") 'git-gutter:toggle)
 (global-set-key (kbd "C-x v =") 'git-gutter:popup-hunk)
 
 ;; Jump to next/previous hunk

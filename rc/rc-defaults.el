@@ -16,6 +16,11 @@
 ;;; make some thresholds for flx larger
 (setq flx-ido-threshold 10000)
 (setq gc-cons-threshold 20000000)
+;;; disable prompt when creating new buffer
+(setq ido-create-new-buffer 'always)
+
+;;; disable yes-or-no-p
+;; (defalias 'yes-or-no-p 'y-or-n-p)
 
 ;;; reopen file with sudo
 (defun sudo-edit (&optional arg)
@@ -64,6 +69,10 @@ buffer is not visiting a file."
 
 ;;; disable tab indentation by default
 (setq-default indent-tabs-mode nil)
+
+;;; make the tab do complete
+(setq-default tab-always-indent 'complete)
+
 
 ;;; use hippie expand instead of dbbrev-expand
 (global-set-key (kbd "M-/") 'hippie-expand)
@@ -167,6 +176,9 @@ buffer is not visiting a file."
 (require 'undohist)
 (undohist-initialize)
 (setq undohist-ignored-files '("COMMIT_EDITMSG"))
+(setq undo-outer-limit 50000000)
+;; (setq warning-suppress-types
+;;       '((undo discard-info)))
 
 ;;; Track commands frequency
 (keyfreq-mode 1)
