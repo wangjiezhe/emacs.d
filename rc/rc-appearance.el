@@ -78,7 +78,7 @@
 (global-visual-line-mode 1)
 
 ;;; display "lambda" as "λ"
-;; (global-prettify-symbols-mode 1)
+(global-prettify-symbols-mode 1)
 
 ;;; avoid mouse point gets too close to cursor
 (mouse-avoidance-mode 'animate)
