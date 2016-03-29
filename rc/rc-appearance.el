@@ -21,10 +21,10 @@
 
 ;;; set a default font
 (when (and (display-graphic-p)
-           (member "Source Code Pro" (font-family-list)))
-  (set-face-attribute 'default nil :font "Source Code Pro Semibold")
-  (add-to-list 'initial-frame-alist '(font . "Source Code Pro Semibold-13"))
-  (add-to-list 'default-frame-alist '(font . "Source Code Pro Semibold-13")))
+           (member "Source Code Pro for Powerline" (font-family-list)))
+  ;; (set-face-attribute 'default nil :font "Source Code Pro for Powerline")
+  (add-to-list 'initial-frame-alist '(font . "Source Code Pro for Powerline-13:demibold"))
+  (add-to-list 'default-frame-alist '(font . "Source Code Pro for Powerline-13:demibold")))
 
 
 ;;; hide the startup message
