@@ -169,6 +169,7 @@
 (depends-on "top-mode")
 (depends-on "undo-tree")
 (depends-on "undohist")
+(depends-on "vimrc-mode")
 (depends-on "w3m")
 (depends-on "web-completion-data")
 (depends-on "websocket")

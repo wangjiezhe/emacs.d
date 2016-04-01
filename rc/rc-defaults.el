@@ -210,6 +210,7 @@ buffer is not visiting a file."
    ("\\.pac\\'" . javascript-mode)
    ("\\.conkyrc\\'" . lua-mode)
    ("\\.pr[io]\\'" . qt-pro-mode)
+   (".vim\\(rc\\)?" . vimrc-mode)
    ))
 
 
