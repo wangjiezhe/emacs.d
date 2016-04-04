@@ -205,12 +205,15 @@ buffer is not visiting a file."
    ("\\.service\\'" . conf-mode)
    ("/enp5s0-" . conf-mode)
    ("/wlp4s0-" . conf-mode)
+   ("/mirrorlist" . conf-mode)
+   ("\\.rules\\'" . conf-mode)
    ("\\.tm\\'" . xml-mode)
    ("\\.ts\\'" . xml-mode)
    ("\\.pac\\'" . javascript-mode)
    ("\\.conkyrc\\'" . lua-mode)
    ("\\.pr[io]\\'" . qt-pro-mode)
    (".vim\\(rc\\)?" . vimrc-mode)
+   ("\\.srt\\'" . srt-mode)
    ))
 
 
