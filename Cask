@@ -137,6 +137,8 @@
 (depends-on "pallet")
 (depends-on "pandoc-mode")
 (depends-on "paredit")
+(depends-on "paredit-everywhere")
+(depends-on "paredit-menu")
 (depends-on "pdf-tools")
 (depends-on "php-mode")
 (depends-on "pkg-info")
