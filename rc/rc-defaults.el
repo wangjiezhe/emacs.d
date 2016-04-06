@@ -45,13 +45,6 @@ buffer is not visiting a file."
 ;;; auto show completions for execute-extended-command
 (icomplete-mode 1)
 
-;;; auto close bracket insertion
-;; (electric-pair-mode 1)
-;; (setq electric-pair-pairs '(
-;;                             (?\" . ?\")
-;;                             (?\{ . ?\})
-;;                             ))
-
 ;;; make ibuffer default
 (defalias 'list-buffers 'ibuffer)
 

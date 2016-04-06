@@ -10,6 +10,10 @@
 (add-hook 'racket-mode-hook #'enable-paredit-mode)
 (add-hook 'sly-mode-hook #'enable-paredit-mode)
 
+(add-hook 'prog-mode-hook 'electric-pair-mode)
+(add-hook 'paredit-mode-hook
+          (lambda () (electric-pair-mode 0)))
+
 (add-hook 'prog-mode-hook 'paredit-everywhere-mode)
 (eval-after-load 'paredit
   '(require 'paredit-menu))
