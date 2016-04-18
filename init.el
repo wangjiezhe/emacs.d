@@ -50,6 +50,7 @@
 (require 'qt-pro)                       ; Qt Pro/Pri major mode
 ;; (require 'unicad)                       ; auto detect charset
 ;; (require 'srt-mode)
+(require 'kconfig-mode)
 
 ;;; packages
 (require 'rc-smex)
