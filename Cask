@@ -97,7 +97,6 @@
 (depends-on "json-snatcher")
 (depends-on "julia-mode")
 (depends-on "julia-shell")
-(depends-on "keyfreq")
 (depends-on "latex-extra")
 (depends-on "latex-math-preview")
 (depends-on "latex-pretty-symbols")
