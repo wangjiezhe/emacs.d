@@ -22,6 +22,12 @@
 ;;; disable yes-or-no-p
 ;; (defalias 'yes-or-no-p 'y-or-n-p)
 
+;;; faster than the default scp
+(setq tramp-default-method "ssh")
+
+;;; use bash inside tramp
+(eval-after-load 'tramp '(setenv "SHELL" "/bin/bash"))
+
 ;;; reopen file with sudo
 (defun sudo-edit (&optional arg)
   "Edit currently visited file as root.
@@ -31,16 +37,16 @@ Will also prompt for a file to visit if current
 buffer is not visiting a file."
   (interactive "P")
   (if (or arg (not buffer-file-name))
-      (find-file (concat "/sudo:root@localhost:"
+      (find-file (concat "/sudo::"
                          (ido-read-file-name "Find file(as root): ")))
-    (find-alternate-file (concat "/sudo:root@localhost:" buffer-file-name))))
+    (find-alternate-file (concat "/sudo::" buffer-file-name))))
 
 ;;; auto open read-only file with sudo
 ;; (defadvice ido-find-file (after find-file-sudo activate)
 ;;   "Find file as root if necessary."
 ;;   (unless (and buffer-file-name
 ;;                (file-writable-p buffer-file-name))
-;;     (find-alternate-file (concat "/sudo:root@localhost:" buffer-file-name))))
+;;     (find-alternate-file (concat "/sudo::" buffer-file-name))))
 
 ;;; auto show completions for execute-extended-command
 (icomplete-mode 1)
