@@ -213,6 +213,7 @@ buffer is not visiting a file."
    ("\\.pr[io]\\'" . qt-pro-mode)
    (".vim\\(rc\\)?" . vimrc-mode)
    ("\\.srt\\'" . srt-mode)
+   ("\\.lua\\'" . lua-mode)
    ))
 
 
