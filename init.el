@@ -42,7 +42,8 @@
 (require 'rc-appearance)                ; change the appearance/gui
 (require 'rc-defaults)                  ; change the default settings
 (require 'rc-recentf)
-(require 'rc-isearch)
+;; (require 'rc-isearch)
+(require 'rc-ivy)
 (require 'rc-org)
 (require 'rc-browser)
 
@@ -53,7 +54,7 @@
 (require 'kconfig-mode)
 
 ;;; packages
-(require 'rc-smex)
+;; (require 'rc-smex)
 (require 'rc-undo-tree)
 (require 'rc-paren)
 (require 'rc-chinese-pyim)
