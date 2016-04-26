@@ -18,8 +18,8 @@
 ;; (if (display-graphic-p)
 ;;     (load-theme 'molokai t)
 ;;   (load-theme 'material t))
-(if (display-graphic-p)
-    (load-theme 'airline-molokai t))
+;; (if (display-graphic-p)
+;;     (load-theme 'airline-molokai t))
 
 ;;; set a default font
 (when (and (display-graphic-p)
