@@ -64,6 +64,7 @@
 (require 'rc-avy)
 (require 'rc-window)
 (require 'rc-tex)
+(require 'rc-c)
 (require 'rc-python)
 (require 'rc-ag)
 (require 'rc-sly)
