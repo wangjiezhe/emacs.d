@@ -1,5 +1,5 @@
 (source gnu)
-(source melpa)
+(source "melpa" "http://elpa.popkit.org/packages/")
 
 (depends-on "2048-game")
 (depends-on "ace-window")

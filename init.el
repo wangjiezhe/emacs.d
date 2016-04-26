@@ -15,9 +15,9 @@
 
 ;;; use emacs behind proxy
 (setq url-proxy-services
-      '(("no-proxy" . "^\\(localhost\\|10.*\\|elpa.popkit.org\\)")
-        ("http" . "127.0.0.1:8087")
-        ("https" . "127.0.0.1:8087")))
+      '(("https" . "127.0.0.1:8087")
+        ;; ("http" . "127.0.0.1:8087")
+        ("no-proxy" . "^\\(localhost\\|.*\\.popkit\\.org\\)")))
 
 ;;; use cask and pallet to manage packages
 (require 'cask (expand-file-name "~/.cask/cask.el"))
