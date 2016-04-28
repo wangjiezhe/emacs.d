@@ -66,6 +66,7 @@
 (require 'rc-tex)
 (require 'rc-c)
 (require 'rc-python)
+(require 'rc-scheme)
 (require 'rc-ag)
 (require 'rc-sly)
 (require 'rc-tabbar-ruler)

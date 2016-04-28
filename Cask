@@ -1,5 +1,5 @@
-(source gnu)
 (source "melpa" "http://elpa.popkit.org/packages/")
+(source gnu)
 
 (depends-on "2048-game")
 (depends-on "ace-window")
@@ -170,6 +170,8 @@
 (depends-on "request")
 (depends-on "s")
 (depends-on "sage-shell-mode")
+(depends-on "scheme-complete")
+(depends-on "scheme-here")
 (depends-on "seq")
 (depends-on "shut-up")
 (depends-on "sly")
