@@ -191,7 +191,7 @@ buffer is not visiting a file."
  (function (lambda (setting)
              (setq auto-mode-alist
                    (cons setting auto-mode-alist))))
- '(("/Cask" . emacs-lisp-mode)
+ '(("/Cask" . cask-mode)
    ("\\.sage\\'" . python-mode)
    ("PKGBUILD" . pkgbuild-mode)
    ("\\.install\\'" . sh-mode)
