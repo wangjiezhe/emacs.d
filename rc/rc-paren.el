@@ -8,7 +8,11 @@
 (add-hook 'lisp-interaction-mode-hook #'enable-paredit-mode)
 (add-hook 'scheme-mode-hook #'enable-paredit-mode)
 (add-hook 'racket-mode-hook #'enable-paredit-mode)
+(add-hook 'racket-repl-mode-hook #'enable-paredit-mode)
 (add-hook 'sly-mode-hook #'enable-paredit-mode)
+(add-hook 'scheme-mode-hook #'enable-paredit-mode)
+(add-hook 'inferior-scheme-mode-hook #'enable-paredit-mode)
+
 
 (add-hook 'prog-mode-hook 'electric-pair-mode)
 (add-hook 'paredit-mode-hook

@@ -1,9 +1,13 @@
-;;; Configuration for scheme
+;;; Configuration for scheme/racket
 
+(require 'scheme-here)
 (setq scheme-program-name "chez-scheme")
 
 (eval-after-load 'scheme
-  '(require 'scheme-here))
+  '(progn
+     (require 'scheme-complete)
+     (define-key scheme-mode-map "\e\t" 'scheme-smart-complete)
+     (define-key scheme-mode-map "\t" 'scheme-complete-or-indent)))
 
 ;; bypass the interactive question and start the default interpreter
 (defun scheme-proc ()
@@ -46,5 +50,8 @@
   (lambda ()
     (define-key scheme-mode-map (kbd "<f5>") 'scheme-send-last-sexp-split-window)
     (define-key scheme-mode-map (kbd "<f6>") 'scheme-send-definition-split-window)))
+
+(add-hook 'racket-mode-hook #'racket-unicode-input-method-enable)
+(add-hook 'racket-repl-mode-hook #'racket-unicode-input-method-enable)
 
 (provide 'rc-scheme)
