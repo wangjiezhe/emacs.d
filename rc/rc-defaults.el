@@ -221,5 +221,8 @@ buffer is not visiting a file."
 (setq user-full-name "Jiezhe Wang")
 (setq user-mail-address "wangjiezhe@gmail.com")
 
+(setq pkgbuild-user-full-name "wangjiezhe")
+(setq pkgbuild-user-mail-address "wangjiezhe AT yandex DOT com")
+
 
 (provide 'rc-defaults)
