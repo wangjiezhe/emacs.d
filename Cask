@@ -94,6 +94,7 @@
 (depends-on "highlight")
 (depends-on "highlight-defined")
 (depends-on "highlight-indentation")
+(depends-on "highlight-quoted")
 (depends-on "hl-defined")
 (depends-on "hl-todo")
 (depends-on "hlinum")

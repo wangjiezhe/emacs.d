@@ -50,6 +50,8 @@
   (lambda ()
     (define-key scheme-mode-map (kbd "<f5>") 'scheme-send-last-sexp-split-window)
     (define-key scheme-mode-map (kbd "<f6>") 'scheme-send-definition-split-window)))
+(add-hook 'scheme-mode-hook 'highlight-quoted-mode)
+
 
 (add-hook 'racket-mode-hook #'racket-unicode-input-method-enable)
 (add-hook 'racket-repl-mode-hook #'racket-unicode-input-method-enable)
