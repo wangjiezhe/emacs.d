@@ -83,7 +83,7 @@
 (global-prettify-symbols-mode 1)
 
 ;;; avoid mouse point gets too close to cursor
-(mouse-avoidance-mode 'animate)
+;; (mouse-avoidance-mode 'animate)
 
 ;;; set fill-column
 ;; (setq fill-column 80)
