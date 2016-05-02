@@ -28,4 +28,9 @@
 ;; (--each '("python-mode" "python")
 ;;   (eval-after-load it '(electric-pair-mode -1)))
 
+(define-key paredit-mode-map (kbd "M-[") 'paredit-backward)
+(define-key paredit-mode-map (kbd "M-]") 'paredit-forward)
+
+(global-set-key (kbd "C-=") 'er/expand-region)
+
 (provide 'rc-paren)

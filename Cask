@@ -67,6 +67,7 @@
 (depends-on "ess-view")
 (depends-on "eww-lnum")
 (depends-on "exec-path-from-shell")
+(depends-on "expand-region")
 (depends-on "f")
 (depends-on "faceup")
 (depends-on "fcitx")
