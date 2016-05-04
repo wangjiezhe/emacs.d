@@ -183,6 +183,9 @@ buffer is not visiting a file."
 ;; (keyfreq-mode 1)
 ;; (keyfreq-autosave-mode 1)
 
+;;; clean up white space before save
+(add-hook 'before-save-hook 'whitespace-cleanup)
+
 ;;; custom filetype
 ;; (add-to-list 'auto-mode-alist '("Cask" . emacs-lisp-mode))
 ;; (add-to-list 'auto-mode-alist '("\\.sage\\'" . python-mode))
