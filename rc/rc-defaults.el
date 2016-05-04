@@ -217,6 +217,10 @@ buffer is not visiting a file."
    (".vim\\(rc\\)?" . vimrc-mode)
    ("\\.srt\\'" . srt-mode)
    ("\\.lua\\'" . lua-mode)
+   ("/MF-" . makefile-gmake-mode)
+   ("/[Mm]akefile" . makefile-gmake-mode)
+   ("/MF-.*\.in\\'" . makefile-automake-mode)
+   ("/[Mm]akefile.*\\.in\\'" . makefile-automake-mode)
    ))
 
 

@@ -188,6 +188,7 @@
 (depends-on "tabbar")
 (depends-on "tabbar-ruler")
 (depends-on "table")
+(depends-on "tablist")
 (depends-on "toc-org")
 (depends-on "top-mode")
 (depends-on "undo-tree")
