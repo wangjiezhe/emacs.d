@@ -20,16 +20,16 @@
 
 (add-hook 'prog-mode-hook 'paredit-everywhere-mode)
 (eval-after-load 'paredit
-  '(require 'paredit-menu))
+  '(progn
+     (require 'paredit-menu)
+     (define-key paredit-mode-map (kbd "M-[") 'paredit-backward)
+     (define-key paredit-mode-map (kbd "M-]") 'paredit-forward)))
 
 ;;; enable smartparens-mode
 ;; (smartparens-global-mode 1)
 ;; (require 'smartparens-config)
 ;; (--each '("python-mode" "python")
 ;;   (eval-after-load it '(electric-pair-mode -1)))
-
-(define-key paredit-mode-map (kbd "M-[") 'paredit-backward)
-(define-key paredit-mode-map (kbd "M-]") 'paredit-forward)
 
 (global-set-key (kbd "C-=") 'er/expand-region)
 
