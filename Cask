@@ -1,10 +1,11 @@
-(source "melpa" "http://elpa.popkit.org/packages/")
 (source gnu)
+(source melpa)
 
 (depends-on "2048-game")
 (depends-on "ace-window")
 (depends-on "ag")
 (depends-on "airline-themes")
+(depends-on "alert")
 (depends-on "async")
 (depends-on "auctex")
 (depends-on "auto-yasnippet")
