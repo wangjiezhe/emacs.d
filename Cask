@@ -102,6 +102,7 @@
 (depends-on "hlinum")
 (depends-on "htmlize")
 (depends-on "hydra")
+(depends-on "iedit")
 (depends-on "ivy")
 (depends-on "jade-mode")
 (depends-on "jedi-core")

@@ -25,16 +25,6 @@
 (require 'pallet)
 (pallet-mode t)
 
-;;; use ELPA/MELPA package system
-;; (require 'package)
-;; (add-to-list 'package-archives
-;; 	     '("melpa" . "http://melpa.milkbox.net/packages/") t)
-;; (add-to-list 'package-archives
-;; 	     '("melpa-stable" . "http://stable.melpa.org/packages/") t)
-;; (add-to-list 'package-archives
-;;              '("elpy" . "https://jorgenschaefer.github.io/packages/") t)
-;; (package-initialize)
-
 
 ;;; Load configs for specific features and modes
 
