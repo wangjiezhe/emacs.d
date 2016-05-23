@@ -67,6 +67,7 @@
 (require 'rc-ecb)
 (require 'rc-multiple-cursor)
 (require 'rc-yasnippets)
+(require 'rc-eshell)
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
