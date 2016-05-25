@@ -13,6 +13,10 @@
 (define-coding-system-alias 'utf8 'utf-8)
 (define-coding-system-alias 'UTF8 'utf-8)
 
+(setq temporary-file-directory
+      (expand-file-name "emacs" temporary-file-directory))
+(make-directory temporary-file-directory t)
+
 ;;; use emacs behind proxy
 (setq url-proxy-services
       '(("https" . "127.0.0.1:8087")

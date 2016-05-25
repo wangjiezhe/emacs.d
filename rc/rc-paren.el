@@ -23,7 +23,8 @@
   '(progn
      (require 'paredit-menu)
      (define-key paredit-mode-map (kbd "M-[") 'paredit-backward)
-     (define-key paredit-mode-map (kbd "M-]") 'paredit-forward)))
+     (define-key paredit-mode-map (kbd "M-]") 'paredit-forward)
+))
 
 ;;; enable smartparens-mode
 ;; (smartparens-global-mode 1)
