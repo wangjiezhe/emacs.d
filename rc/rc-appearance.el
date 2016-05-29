@@ -3,12 +3,12 @@
 
 ;;; initial window size
 ;; (setq initial-frame-alist
-;;      '((width .  102)
-;; 	(height . 54)))
-;; default/subsequent window
+;;       '((width .  102)
+;;         (height . 54)))
+;;; default/subsequent window
 ;; (setq default-frame-alist
-;;      '((width . 100)
-;; 	(height . 54)))
+;;       '((width . 100)
+;;         (height . 54)))
 
 (add-to-list 'custom-theme-load-path (expand-file-name "themes" user-emacs-directory))
 

@@ -171,6 +171,7 @@
 (depends-on "projectile")
 (depends-on "projectile-speedbar")
 (depends-on "py-autopep8")
+(depends-on "pylint")
 (depends-on "python-environment")
 (depends-on "pyvenv")
 (depends-on "qml-mode")

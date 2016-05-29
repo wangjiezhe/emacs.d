@@ -19,8 +19,8 @@
 
 (add-hook 'elpy-mode-hook
           (lambda ()
-            (setq fill-column 80)
-            ;; (auto-fill-mode 1)
+            (setq fill-column 120)
+            (auto-fill-mode 1)
             ))
 
 ;;; company-jedi
