@@ -121,7 +121,6 @@
    ;; ido-mode
    ;; flycheck
    ;; show-paren
-   ;; rainbow-delimiters
    ;; highlight-symbols
 
    ;; neotree
@@ -130,6 +129,18 @@
    `(neo-root-dir-face ((t (:foreground ,molokai-pink :weight bold))))
    `(neo-dir-link-face ((t (:foreground ,molokai-chartreuse))))
    `(neo-expand-btn-face ((t (:foreground ,molokai-orange+5 :weight bold))))
+
+   ;; rainbow-delimiters, import from material theme
+   `(rainbow-delimiters-depth-1-face ((,class (:foreground ,"#e91e63"))))
+   `(rainbow-delimiters-depth-2-face ((,class (:foreground ,"#2196f3"))))
+   `(rainbow-delimiters-depth-3-face ((,class (:foreground ,"#ef6c00"))))
+   `(rainbow-delimiters-depth-4-face ((,class (:foreground ,"#b388ff"))))
+   `(rainbow-delimiters-depth-5-face ((,class (:foreground ,"#76ff03"))))
+   `(rainbow-delimiters-depth-6-face ((,class (:foreground ,"#26a69a"))))
+   `(rainbow-delimiters-depth-7-face ((,class (:foreground ,"#ffcdd2"))))
+   `(rainbow-delimiters-depth-8-face ((,class (:foreground ,"#795548"))))
+   `(rainbow-delimiters-depth-9-face ((,class (:foreground ,"#dce775"))))
+   `(rainbow-delimiters-unmatched-face ((,class (:foreground "#ffffff" :background ,"#ef6c00"))))
    ))
 
 (defcustom molokai-theme-kit nil
