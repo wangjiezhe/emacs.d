@@ -85,7 +85,7 @@ buffer is not visiting a file."
 ;;; dont't let the cursor go into minibuffer prompt
 (setq minibuffer-prompt-properties
       (quote (read-only t point-entered minibuffer-avoid-prompt
-			face minibuffer-prompt)))
+                        face minibuffer-prompt)))
 
 ;;; aloow minibuffer command while in the minibuffer
 (setq enable-recursive-minibuffers t)
@@ -185,6 +185,9 @@ buffer is not visiting a file."
 
 ;;; clean up white space before save
 (add-hook 'before-save-hook 'whitespace-cleanup)
+
+;;; enable which-key mode
+(which-key-mode)
 
 ;;; custom filetype
 ;; (add-to-list 'auto-mode-alist '("Cask" . emacs-lisp-mode))

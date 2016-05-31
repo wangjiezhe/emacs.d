@@ -204,6 +204,7 @@
 (depends-on "w3m")
 (depends-on "web-completion-data")
 (depends-on "websocket")
+(depends-on "which-key")
 (depends-on "window-numbering")
 (depends-on "wisp-mode")
 (depends-on "with-editor")
