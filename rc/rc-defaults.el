@@ -224,6 +224,7 @@ buffer is not visiting a file."
    ("/[Mm]akefile" . makefile-gmake-mode)
    ("/MF-.*\.in\\'" . makefile-automake-mode)
    ("/[Mm]akefile.*\\.in\\'" . makefile-automake-mode)
+   ("\\.kv\\'" . kivy-mode)
    ))
 
 

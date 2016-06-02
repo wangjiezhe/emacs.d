@@ -114,6 +114,7 @@
 (depends-on "julia-mode")
 (depends-on "julia-shell")
 (depends-on "key-chord")
+(depends-on "kivy-mode")
 (depends-on "latex-extra")
 (depends-on "latex-math-preview")
 (depends-on "latex-pretty-symbols")
