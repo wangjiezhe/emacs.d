@@ -64,7 +64,7 @@ That's it!
     - rc-appearance.el: custom appearance
     - rc-defaults.el: custom default settings
     - ...
-  - site-lisps/: emacs lisp plugin third party
+  - site-lisp/: emacs lisp plugin third party
   - snippets/: custom snippets
   - themes/: custom themes
 
@@ -170,5 +170,3 @@ That's it!
 |--------+---------------------+--------------|
 | /      | <                   |              |
 | [[https://code.google.com/p/unicad/][unicad]] | Auto detect charset |              |
-
-

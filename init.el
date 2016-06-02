@@ -2,7 +2,7 @@
 
 ;; (add-to-list 'load-path (expand-file-name "~/.cask"))
 (add-to-list 'load-path (expand-file-name "rc" user-emacs-directory))
-(add-to-list 'load-path (expand-file-name "site-lisps" user-emacs-directory))
+(add-to-list 'load-path (expand-file-name "site-lisp" user-emacs-directory))
 
 ;;; set UTF-8 as default file encoding
 (set-language-environment "UTF-8")
@@ -41,7 +41,7 @@
 (require 'rc-org)
 (require 'rc-browser)
 
-;;; site-lisps
+;;; site-lisp
 (require 'qt-pro)                       ; Qt Pro/Pri major mode
 ;; (require 'unicad)                       ; auto detect charset
 ;; (require 'srt-mode)
