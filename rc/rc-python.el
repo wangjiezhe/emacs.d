@@ -10,7 +10,7 @@
 (elpy-use-ipython)
 
 ;;; enable autopep8 formatting on save
-(add-hook 'elpy-mode-hook 'py-autopep8-enable-on-save)
+;; (add-hook 'elpy-mode-hook 'py-autopep8-enable-on-save)
 
 ;;; use flycheck instead of flymake
 (when (require 'flycheck nil t)
