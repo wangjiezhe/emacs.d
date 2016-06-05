@@ -1,15 +1,5 @@
 ;;; Configuration for appearance
 
-
-;;; initial window size
-;; (setq initial-frame-alist
-;;       '((width .  102)
-;;         (height . 54)))
-;;; default/subsequent window
-;; (setq default-frame-alist
-;;       '((width . 100)
-;;         (height . 54)))
-
 (add-to-list 'custom-theme-load-path (expand-file-name "themes" user-emacs-directory))
 
 ;;; custom theme
@@ -24,7 +14,6 @@
 ;;; set a default font
 (when (and (display-graphic-p)
            (member "Source Code Pro for Powerline" (font-family-list)))
-  ;; (set-face-attribute 'default nil :font "Source Code Pro for Powerline")
   (add-to-list 'initial-frame-alist '(font . "Source Code Pro for Powerline-13:demibold"))
   (add-to-list 'default-frame-alist '(font . "Source Code Pro for Powerline-13:demibold")))
 
@@ -86,7 +75,7 @@
 ;; (mouse-avoidance-mode 'animate)
 
 ;;; set fill-column
-;; (setq fill-column 80)
+(setq fill-column 80)
 
 
 (provide 'rc-appearance)

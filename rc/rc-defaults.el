@@ -194,9 +194,9 @@ buffer is not visiting a file."
 ;; (add-to-list 'auto-mode-alist '("\\.sage\\'" . python-mode))
 (autoload 'pkgbuild-mode "pkgbuild-mode.el" "PKGBUILD mode." t)
 (mapc
- (function (lambda (setting)
-             (setq auto-mode-alist
-                   (cons setting auto-mode-alist))))
+ (lambda (setting)
+   (setq auto-mode-alist
+         (cons setting auto-mode-alist)))
  '(("/Cask" . cask-mode)
    ("\\.sage\\'" . python-mode)
    ("PKGBUILD" . pkgbuild-mode)

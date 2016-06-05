@@ -188,7 +188,6 @@
 (depends-on "sly")
 (depends-on "sly-company")
 (depends-on "smartparens")
-(depends-on "smex")
 (depends-on "sr-speedbar")
 (depends-on "swiper")
 (depends-on "switch-window")
