@@ -1,5 +1,7 @@
 ;;; Configuration for pare1nthesis
 
+(electric-pair-mode 1)
+
 ;;; autoload paredit in lisp modes
 (add-hook 'emacs-lisp-mode-hook #'enable-paredit-mode)
 (add-hook 'eval-expression-minibuffer-setup-hook #'enable-paredit-mode)
@@ -14,9 +16,10 @@
 (add-hook 'inferior-scheme-mode-hook #'enable-paredit-mode)
 
 
-(add-hook 'prog-mode-hook 'electric-pair-mode)
-(add-hook 'paredit-mode-hook
-          (lambda () (electric-pair-mode 0)))
+;; (add-hook 'paredit-mode-hook
+;;           (lambda () (electric-pair-mode 0)))
+;; (add-hook 'paredit-everywhere-mode-hook
+;;           (lambda () (electric-pair-mode 0)))
 
 (add-hook 'prog-mode-hook 'paredit-everywhere-mode)
 (eval-after-load 'paredit
