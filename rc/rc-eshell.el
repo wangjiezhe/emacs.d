@@ -7,7 +7,8 @@
           (if (search (directory-file-name (expand-file-name (getenv "HOME"))) (eshell/pwd))
               (replace-regexp-in-string (expand-file-name (getenv "HOME")) "~" (eshell/pwd))
             (eshell/pwd))
-          (if (= (user-uid) 0) " # " " $ "))))
+          "\n"
+          (if (= (user-uid) 0) "# " "$ "))))
 
 (defun colorfy-eshell-prompt ()
   "Colorfy eshell prompt according to `user@hostname' regexp."
