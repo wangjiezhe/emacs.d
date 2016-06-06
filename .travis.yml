@@ -29,6 +29,7 @@ install:
   - ln -sf $PWD $HOME/.emacs.d
 
 before_script:
+  - sed -i "s/^(source \"\([^\"]*\)\" .*)/(source \1)/" Cask
   - cask
 
 script:
