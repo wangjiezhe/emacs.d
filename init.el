@@ -18,10 +18,10 @@
 (make-directory temporary-file-directory t)
 
 ;;; use emacs behind proxy
-(setq url-proxy-services
-      '(("https" . "127.0.0.1:8087")
-        ;; ("http" . "127.0.0.1:8087")
-        ("no-proxy" . "^\\(localhost\\|.*\\.popkit\\.org\\)")))
+;; (setq url-proxy-services
+;;       '(("https" . "127.0.0.1:8087")
+;;         ;; ("http" . "127.0.0.1:8087")
+;;         ("no-proxy" . "^\\(localhost\\|.*\\.popkit\\.org\\)")))
 
 ;;; use cask and pallet to manage packages
 (require 'cask (expand-file-name "~/.cask/cask.el"))

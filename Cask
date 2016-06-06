@@ -1,5 +1,5 @@
-(source gnu)
-(source melpa)
+(source "gnu" "https://mirrors.tuna.tsinghua.edu.cn/elpa/gnu/")
+(source "melpa" "https://mirrors.tuna.tsinghua.edu.cn/elpa/melpa/")
 
 (depends-on "2048-game")
 (depends-on "ace-window")
@@ -217,6 +217,8 @@
 (depends-on "yasnippet")
 (depends-on "youdao-dictionary")
 ;;;pallet-ignore
-;; (source "melpa" "http://melpa.milkbox.net/packages/")
-;; (source "gnu" "http://elpa.gnu.org/packages/")
 ;; (source "melpa" "http://elpa.popkit.org/packages/")
+;; (source "gnu" "https://elpa.zilongshanren.com/gnu/")
+;; (source "melpa" "https://elpa.zilongshanren.com/melpa/")
+;; (source "gnu" "https://mirrors.tuna.tsinghua.edu.cn/elpa/gnu/")
+;; (source "melpa" "https://mirrors.tuna.tsinghua.edu.cn/elpa/melpa/")
