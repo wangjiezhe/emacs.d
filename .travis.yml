@@ -22,6 +22,8 @@ matrix:
       - EVM_EMACS=emacs-git-snapshot-travis
 
 before_script:
+  - if [ -d $HOME/.emacs.d ]; then rm -rf $HOME/.emacs.d; fi
+  - ln -s $PWD $HOME/.emacs.d
   - cask
 
 script:
