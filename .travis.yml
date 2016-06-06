@@ -10,6 +10,9 @@ before_install:
 
   - curl -fsSkL https://github.com/cask/cask/raw/master/go | python
 
+install:
+  - pip install ipython
+
 env:
   # - EVM_EMACS=emacs-24.4-travis
   - EVM_EMACS=emacs-24.5-travis
