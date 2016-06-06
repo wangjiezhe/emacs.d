@@ -31,7 +31,8 @@
   (tool-bar-mode -1))
 
 ;;; hid scroll bar
-(unless (display-graphic-p)
+(when (and (not (display-graphic-p))
+           (fboundp 'scroll-bar-mode))
   (scroll-bar-mode -1))
 
 
