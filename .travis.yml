@@ -1,4 +1,4 @@
-language: emacs-lisp
+language: ruby
 sudo: required
 
 before_install:
@@ -24,8 +24,7 @@ matrix:
       - EVM_EMACS=emacs-git-snapshot-travis
 
 install:
-  - if [ -d $HOME/.emacs.d ]; then rm -rf $HOME/.emacs.d; fi
-  - ln -s $PWD $HOME/.emacs.d
+  - if ! [ -e $HOME/.emacs.d ]; then ln -s $PWD $HOME/.emacs.d; fi
 
 before_script:
   - cask
