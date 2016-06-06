@@ -16,7 +16,5 @@
 ;; (setq browse-url-browser-function 'browse-url-chromium)
 ;; (setq browse-url-browser-function 'browse-url-firefox)
 
-;; (setq browse-url-browser-function 'w3m-browse-url)
-;; (setq w3m-use-cookies t)
 
 (provide 'rc-browser)

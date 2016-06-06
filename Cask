@@ -201,7 +201,6 @@
 (depends-on "undohist")
 (depends-on "verify-url")
 (depends-on "vimrc-mode")
-(depends-on "w3m")
 (depends-on "web-completion-data")
 (depends-on "websocket")
 (depends-on "which-key")
