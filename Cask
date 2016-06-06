@@ -50,8 +50,6 @@
 (depends-on "ecb")
 (depends-on "edit-server")
 (depends-on "editorconfig")
-(depends-on "editorconfig-core")
-(depends-on "editorconfig-fnmatch")
 (depends-on "ein")
 (depends-on "elpy")
 (depends-on "emms")

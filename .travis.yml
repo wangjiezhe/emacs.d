@@ -20,9 +20,7 @@ matrix:
       - EVM_EMACS=emacs-git-snapshot-travis
 
 before_script:
-  - lsb_release -a
-  - emacs -Q --version
-  - cask install
+  - cask
 
 script:
   - ./.travis-build.sh
