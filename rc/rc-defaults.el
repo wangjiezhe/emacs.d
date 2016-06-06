@@ -189,6 +189,10 @@ buffer is not visiting a file."
 ;;; enable which-key mode
 (which-key-mode)
 
+;;; use regex replace by default
+(global-set-key (kbd "M-%") 'query-replace-regexp)
+(global-set-key (kbd "C-M-%") 'query-replace)
+
 ;;; custom filetype
 ;; (add-to-list 'auto-mode-alist '("Cask" . emacs-lisp-mode))
 ;; (add-to-list 'auto-mode-alist '("\\.sage\\'" . python-mode))
