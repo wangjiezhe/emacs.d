@@ -1,10 +1,6 @@
 language: emacs-lisp
 sudo: required
 
-cache:
-  directories:
-    - $HOME/.cache/pip
-
 before_install:
   - export PATH="$HOME/.cask/bin:$HOME/.evm/bin:$PATH"
 
@@ -14,12 +10,12 @@ before_install:
 
   - curl -fsSkL https://github.com/cask/cask/raw/master/go | python
 
-  - sudo pip install ipython
+  - sudo -H pip install ipython
 
 env:
-  # - EVM_EMACS=emacs-24.4-travis
+  - EVM_EMACS=emacs-24.4-travis
   - EVM_EMACS=emacs-24.5-travis
-  # - EVM_EMACS=emacs-git-snapshot-travis
+  - EVM_EMACS=emacs-git-snapshot-travis
 
 matrix:
   fast_finish: true

@@ -1,3 +1,5 @@
+[[https://travis-ci.org/wangjiezhe/emacs.d][https://travis-ci.org/wangjiezhe/emacs.d.svg?branch=master]]
+
 * My Emacs Configuration
 
 ** Table of Contents                                                    :TOC:
