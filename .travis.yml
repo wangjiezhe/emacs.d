@@ -1,7 +1,5 @@
 language: emacs-lisp
-
-python:
-  - 3.5
+sudo: required
 
 cache:
   directories:
@@ -16,7 +14,7 @@ before_install:
 
   - curl -fsSkL https://github.com/cask/cask/raw/master/go | python
 
-  - pip install ipython
+  - sudo pip3 install ipython
 
 env:
   # - EVM_EMACS=emacs-24.4-travis
