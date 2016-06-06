@@ -1,5 +1,11 @@
 language: emacs-lisp
-sudo: false
+
+python:
+  - 3.5
+
+cache:
+  directories:
+    - $HOME/.cache/pip
 
 before_install:
   - export PATH="$HOME/.cask/bin:$HOME/.evm/bin:$PATH"
@@ -10,7 +16,6 @@ before_install:
 
   - curl -fsSkL https://github.com/cask/cask/raw/master/go | python
 
-install:
   - pip install ipython
 
 env:
@@ -24,9 +29,11 @@ matrix:
     env:
       - EVM_EMACS=emacs-git-snapshot-travis
 
-before_script:
+install:
   - if [ -d $HOME/.emacs.d ]; then rm -rf $HOME/.emacs.d; fi
   - ln -s $PWD $HOME/.emacs.d
+
+before_script:
   - cask
 
 script:
