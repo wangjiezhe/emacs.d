@@ -1,0 +1,9 @@
+alias w3m w3m-find-file $1
+alias emacs find-file $1
+alias clear recenter 0
+alias d dired $1
+alias la ls -A $*
+alias ll ls -lAh $*
+alias l ls -lh $*
+alias gss git status -s
+alias vim find-file $1
