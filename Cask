@@ -6,6 +6,7 @@
 (depends-on "ag")
 (depends-on "airline-themes")
 (depends-on "alert")
+(depends-on "anzu")
 (depends-on "async")
 (depends-on "auctex")
 (depends-on "auto-yasnippet")

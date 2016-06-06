@@ -49,6 +49,7 @@
 ;;; packages
 (require 'rc-undo-tree)
 (require 'rc-paren)
+(require 'rc-search)
 (require 'rc-chinese-pyim)
 (require 'rc-magit)
 (require 'rc-company)
