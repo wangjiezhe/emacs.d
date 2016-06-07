@@ -1,4 +1,5 @@
 language: python
+sudo: false
 
 python:
   - 3.5
@@ -26,10 +27,11 @@ matrix:
       - EVM_EMACS=emacs-git-snapshot-travis
 
 install:
-  - ln -sf $PWD $HOME/.emacs.d
+  - sed -i "s/^(source \"\([^\"]*\)\" .*)/(source \1)/" Cask
+  - rm -rf $HOME/.emacs.d
+  - ln -s $PWD $HOME/.emacs.d
 
 before_script:
-  - sed -i "s/^(source \"\([^\"]*\)\" .*)/(source \1)/" Cask
   - cask
 
 script:
