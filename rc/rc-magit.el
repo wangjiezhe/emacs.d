@@ -9,6 +9,6 @@
 (setq magit-completing-read-function 'ivy-completing-read)
 
 ;;; git wip
-(magit-wip-after-save-mode)
+;; (magit-wip-after-save-mode)
 
 (provide 'rc-magit)
