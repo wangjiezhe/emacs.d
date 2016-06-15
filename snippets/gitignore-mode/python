@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: python
+# key: python
+#--
+__pycache__/
+.idea/
+.ropeproject/
+*.py[co]

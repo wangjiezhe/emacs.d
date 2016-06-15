@@ -3,6 +3,5 @@
 # name: emacs
 # key: emacs
 # --
-*~
 \#*\#
 .\#*

@@ -1,6 +1,7 @@
 # -*- mode: snippet -*-
 # contributor: Jiezhe Wang (wangjiezhe@gmail.com)
-# name: name
-# key: name
+# name: vim
+# key: vim
 # --
-# name: ${1:name}
+*~
+*.swp
