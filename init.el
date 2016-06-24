@@ -371,6 +371,7 @@
     (list "w_" "w_." "w_.()" #'yas-try-key-from-whitespace))
 )
 
+(require 'rc-scheme)
 (require 'rc-eshell)
 
 (custom-set-variables
