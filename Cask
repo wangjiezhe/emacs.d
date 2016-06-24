@@ -203,6 +203,7 @@
 (depends-on "top-mode")
 (depends-on "undo-tree")
 (depends-on "undohist")
+(depends-on "use-package")
 (depends-on "verify-url")
 (depends-on "vimrc-mode")
 (depends-on "web-completion-data")

@@ -1,10 +1,14 @@
 ;;; configuration for recentf-mode
 
-;;; keep a list of recent open files
-(setq recentf-max-menu-items 25)
-(setq recentf-max-saved-items 30)
-(recentf-mode 1)
-(global-set-key (kbd "C-c r") 'recentf-open-files)
+(use-package recentf
+  :bind ("C-c r" . recentf-open-files)
+  :init
+  (recentf-mode 1)
+  :config
+  (setq recentf-max-menu-items 25)
+  (setq recentf-max-saved-items 30)
+  (add-hook 'kill-emacs-hook 'remove-sudo-in-recentf)
+)
 
 ;;; remove files opened with sudo in recentf-list
 ;; (defun remove-sudo (flist)
@@ -25,7 +29,5 @@
 (defun remove-sudo-in-recentf ()
   (setq recentf-list
         (remove-sudo-T recentf-list nil)))
-
-(add-hook 'kill-emacs-hook 'remove-sudo-in-recentf)
 
 (provide 'rc-recentf)

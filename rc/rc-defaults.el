@@ -149,13 +149,6 @@ buffer is not visiting a file."
 (put 'downcase-region 'disabled nil)
 (put 'LaTeX-hide-environment 'disabled nil)
 
-;;; use version control when save backups
-;; (setq version-control t)
-;; (setq kept-new-versions 3)
-;; (setq delete-old-versions t)
-;; (setq kept-old-versions 2)
-;; (setq dired-kept-versions 1)
-
 ;;; enable editorconfig mode
 (editorconfig-mode 1)
 
@@ -167,8 +160,6 @@ buffer is not visiting a file."
 (setq bmkp-last-as-first-bookmark-file nil)
 
 ;;; better highlight for elisp
-;; (xah-elisp-mode)
-;; (highlight-defined-mode 1)
 (add-hook 'emacs-lisp-mode-hook 'highlight-defined-mode)
 
 ;;; Keep an undo history
@@ -184,14 +175,15 @@ buffer is not visiting a file."
 ;; (keyfreq-autosave-mode 1)
 
 ;;; clean up white space before save
-(add-hook 'before-save-hook 'whitespace-cleanup)
+(add-hook 'before-save-hook
+          (lambda ()
+            (yafolding-show-all)
+            (whitespace-cleanup)))
 
 ;;; enable which-key mode
 (which-key-mode)
 
 ;;; custom filetype
-;; (add-to-list 'auto-mode-alist '("Cask" . emacs-lisp-mode))
-;; (add-to-list 'auto-mode-alist '("\\.sage\\'" . python-mode))
 (autoload 'pkgbuild-mode "pkgbuild-mode.el" "PKGBUILD mode." t)
 (mapc
  (lambda (setting)

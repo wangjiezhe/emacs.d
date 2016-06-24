@@ -1,12 +1,10 @@
 ;;; Configuration for projectile
 
-;;; enable projectile
-(projectile-global-mode)
-
-;;; enable cashing
-(setq projectile-enable-caching t)
-
-;;; use ivy
-(setq projectile-completion-system 'ivy)
+(use-package projectile
+  :init
+  (projectile-global-mode)
+  :config
+  (setq projectile-enable-caching t)
+  (setq projectile-completion-system 'ivy))
 
 (provide 'rc-projectile)
