@@ -12,7 +12,7 @@
 (setq-default pyim-english-input-switch-functions
               '(pyim-probe-program-mode
                 pyim-probe-isearch-mode
-                pyim-probe-dynamic-english
+                ;; pyim-probe-dynamic-english
                 pyim-probe-org-speed-commands
                 pyim-probe-org-structure-template))
 
