@@ -332,6 +332,7 @@
   (setq browse-kill-ring-highlight-current-entry t))
 
 (use-package yafolding
+  :commands yafolding-show-all
   :bind (:map yafolding-mode-map
               ("<C-S-return>" . yafolding-hide-parent-element)
               ("<C-M-return>" . yafolding-toggle-all)
