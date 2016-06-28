@@ -7,7 +7,6 @@
   '(progn
      (require 'scheme-complete)
      (setq scheme-default-implementation 'chicken)
-     (setq lisp-indent-function 'scheme-smart-indent-function)
      (define-key scheme-mode-map "\e\t" 'scheme-smart-complete)
      (define-key scheme-mode-map "\t" 'scheme-complete-or-indent)))
 
