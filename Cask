@@ -19,6 +19,7 @@
 (depends-on "browse-kill-ring+")
 (depends-on "cask")
 (depends-on "cask-mode")
+(depends-on "chinese-conv")
 (depends-on "chinese-pyim")
 (depends-on "chinese-pyim-basedict")
 (depends-on "chinese-pyim-greatdict")
