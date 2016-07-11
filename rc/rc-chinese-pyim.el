@@ -23,6 +23,9 @@
 (setq pyim-use-tooltip 'popup
       pyim-page-length 5)
 
+;;; disable fuzzy pinyin
+(setq pyim-fuzzy-pinyin-alist '())
+
 ;;; use pyim to improve auto completion for chinese
 (require 'chinese-pyim-company)
 (setq pyim-company-max-length 6)
