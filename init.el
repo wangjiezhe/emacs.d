@@ -162,6 +162,7 @@
   (setq-default pyim-punctuation-half-width-functions
                 '(pyim-probe-punctuation-line-beginning
                   pyim-probe-punctuation-after-punctuation))
+  (setq pyim-fuzzy-pinyin-alist '())
   (setq pyim-use-tooltip 'popup
         pyim-page-length 5)
   (use-package chinese-pyim-company
