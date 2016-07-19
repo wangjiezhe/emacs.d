@@ -7,8 +7,9 @@
  'org-babel-load-languages
  '((emacs-lisp . t)
    ;; (clojure . t)
-   ( python . t)
+   (python . t)
    ;; (ruby . t)
+   (shell . t)
    ))
 
 ;; make org mode syntax color embeded source code
