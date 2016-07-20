@@ -23,6 +23,7 @@
 (depends-on "chinese-pyim")
 (depends-on "chinese-pyim-basedict")
 (depends-on "chinese-pyim-greatdict")
+(depends-on "cl-generic")
 (depends-on "clean-aindent-mode")
 (depends-on "cmake-ide")
 (depends-on "cmake-mode")
@@ -206,6 +207,7 @@
 (depends-on "top-mode")
 (depends-on "undo-tree")
 (depends-on "undohist")
+(depends-on "use-package")
 (depends-on "verify-url")
 (depends-on "vimrc-mode")
 (depends-on "web-completion-data")
@@ -218,6 +220,7 @@
 (depends-on "xah-elisp-mode")
 (depends-on "yafolding")
 (depends-on "yaml-mode")
+(depends-on "yaoddmuse")
 (depends-on "yasnippet")
 (depends-on "youdao-dictionary")
 ;;;pallet-ignore
