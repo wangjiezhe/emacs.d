@@ -203,6 +203,7 @@
 (depends-on "tabbar-ruler")
 (depends-on "table")
 (depends-on "tablist")
+(depends-on "tldr")
 (depends-on "toc-org")
 (depends-on "top-mode")
 (depends-on "undo-tree")
