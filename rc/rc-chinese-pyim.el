@@ -1,7 +1,8 @@
 ;;; Configuration for chinese-pyim input method
 
 (require 'chinese-pyim)
-(setq default-input-method "chinese-pyim")
+;; (setq default-input-method "chinese-pyim")
+(setq default-input-method "TeX")
 
 (chinese-pyim-greatdict-enable)
 
