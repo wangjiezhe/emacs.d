@@ -145,7 +145,6 @@
 (depends-on "org-alert")
 (depends-on "org-dashboard")
 (depends-on "org-download")
-(depends-on "org-eww")
 (depends-on "org-fstree")
 (depends-on "org-page")
 (depends-on "org-pdfview")

@@ -27,7 +27,5 @@
 (add-hook 'org-mode-hook 'toc-org-enable)
 (add-to-list 'org-tag-alist '("TOC" . ?T))
 
-(add-hook 'org-mode-hook 'org-eww-mode)
-
 
 (provide 'rc-org)
