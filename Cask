@@ -198,6 +198,7 @@
 (depends-on "sr-speedbar")
 (depends-on "swiper")
 (depends-on "switch-window")
+(depends-on "systemd")
 (depends-on "tabbar")
 (depends-on "tabbar-ruler")
 (depends-on "table")

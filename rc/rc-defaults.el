@@ -207,7 +207,6 @@ buffer is not visiting a file."
    ("rc\\(\\'\\|\\.\\)" . conf-mode)
    ("co?nf\\'" . conf-mode)
    ("\\.repo\\'" . conf-mode)
-   ("\\.service\\'" . conf-mode)
    ("/enp5s0-" . conf-mode)
    ("/wlp4s0-" . conf-mode)
    ("/mirrorlist" . conf-mode)
