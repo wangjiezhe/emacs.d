@@ -1,6 +1,9 @@
 ;;; Bootstrap for emacs
 
 ;; (add-to-list 'load-path (expand-file-name "~/.cask"))
+
+;; (package-initialize)
+
 (add-to-list 'load-path (expand-file-name "rc" user-emacs-directory))
 (add-to-list 'load-path (expand-file-name "site-lisp" user-emacs-directory))
 
