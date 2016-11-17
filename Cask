@@ -56,6 +56,7 @@
 (depends-on "dracula-theme")
 (depends-on "dumb-jump")
 (depends-on "ecb")
+(depends-on "ediprolog")
 (depends-on "edit-server")
 (depends-on "editorconfig")
 (depends-on "ein")

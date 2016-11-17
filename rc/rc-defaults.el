@@ -224,6 +224,7 @@ buffer is not visiting a file."
    ("/MF-.*\.in\\'" . makefile-automake-mode)
    ("/[Mm]akefile.*\\.in\\'" . makefile-automake-mode)
    ("\\.kv\\'" . kivy-mode)
+   ("\\.pl\\'" . prolog-mode)
    ))
 
 
