@@ -235,5 +235,7 @@ buffer is not visiting a file."
 (setq pkgbuild-user-full-name "wangjiezhe")
 (setq pkgbuild-user-mail-address "wangjiezhe AT yandex DOT com")
 
+(setq default-input-method "TeX")
+
 
 (provide 'rc-defaults)
