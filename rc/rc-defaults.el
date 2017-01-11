@@ -162,6 +162,7 @@ buffer is not visiting a file."
 ;;; show details in dired mode, and enable dired+ mode
 (setq diredp-hide-details-initially-flag nil)
 (require 'dired+)
+(setq dired-listing-switches "-lh --group-directories-first")
 
 ;;; use default bookmark file
 (setq bmkp-last-as-first-bookmark-file nil)

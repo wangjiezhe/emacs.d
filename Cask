@@ -53,6 +53,7 @@
 (depends-on "deferred")
 (depends-on "dictionary")
 (depends-on "dired+")
+(depends-on "dired-sort-menu+")
 (depends-on "dracula-theme")
 (depends-on "dumb-jump")
 (depends-on "ecb")
