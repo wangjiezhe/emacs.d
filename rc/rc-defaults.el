@@ -190,6 +190,10 @@ buffer is not visiting a file."
 ;;; enable which-key mode
 (which-key-mode)
 
+;;; move according to logical line
+(global-set-key (kbd "M-n") 'next-logical-line)
+(global-set-key (kbd "M-p") 'previous-logical-line)
+
 ;;; custom filetype
 ;; (add-to-list 'auto-mode-alist '("Cask" . emacs-lisp-mode))
 ;; (add-to-list 'auto-mode-alist '("\\.sage\\'" . python-mode))

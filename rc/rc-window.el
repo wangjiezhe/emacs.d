@@ -1,7 +1,7 @@
 ;;; Configuration for quickly switch windows
 
 ;;; ace-window
-(global-set-key (kbd "M-p") 'ace-window)
+;; (global-set-key (kbd "M-p") 'ace-window)
 
 ;;; switch-window
 (global-set-key (kbd "C-x o") 'switch-window)
