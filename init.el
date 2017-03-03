@@ -7,6 +7,8 @@
 (add-to-list 'load-path (expand-file-name "rc" user-emacs-directory))
 (add-to-list 'load-path (expand-file-name "site-lisp" user-emacs-directory))
 
+(add-to-list 'exec-path (concat (getenv "HOME") "/.opam/system/bin"))
+
 ;;; set UTF-8 as default file encoding
 (set-language-environment "UTF-8")
 ;; (set-default-coding-systems 'utf-8)
@@ -74,6 +76,7 @@
 (require 'rc-multiple-cursor)
 (require 'rc-yasnippets)
 (require 'rc-eshell)
+(require 'rc-ocaml)
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
