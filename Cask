@@ -31,6 +31,7 @@
 (depends-on "company")
 (depends-on "company-auctex")
 (depends-on "company-c-headers")
+(depends-on "company-coq")
 (depends-on "company-emoji")
 (depends-on "company-flx")
 (depends-on "company-ghc")
