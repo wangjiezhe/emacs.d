@@ -221,7 +221,7 @@ buffer is not visiting a file."
    ("\\.pac\\'" . javascript-mode)
    ("\\.conkyrc\\'" . lua-mode)
    ("\\.pr[io]\\'" . qt-pro-mode)
-   (".vim\\(rc\\)?" . vimrc-mode)
+   ("\\.vim\\(rc\\)?" . vimrc-mode)
    ("\\.srt\\'" . srt-mode)
    ("\\.lua\\'" . lua-mode)
    ("/MF-" . makefile-gmake-mode)
@@ -230,6 +230,10 @@ buffer is not visiting a file."
    ("/[Mm]akefile.*\\.in\\'" . makefile-automake-mode)
    ("\\.kv\\'" . kivy-mode)
    ("\\.pl\\'" . prolog-mode)
+   ("\\.topscript\\'" . tuareg-mode)
+   ("\\.ocamlinit\\'" . tuareg-mode)
+   ("\\.ml[ily]\\'" . tuareg-mode)
+   ("\\.topml\\'" . tuareg-mode)
    ))
 
 
