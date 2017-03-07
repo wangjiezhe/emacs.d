@@ -2,7 +2,7 @@ language: python
 sudo: false
 
 python:
-  - 3.5
+  - 3.6
   - 2.7
 
 before_install:
@@ -17,7 +17,7 @@ before_install:
   - pip install ipython
 
 env:
-  - EVM_EMACS=emacs-24.5-travis
+  - EVM_EMACS=emacs-25.1-travis
   - EVM_EMACS=emacs-git-snapshot-travis
 
 matrix:
