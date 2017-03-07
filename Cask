@@ -206,6 +206,7 @@
 (depends-on "shut-up")
 (depends-on "sly")
 (depends-on "sly-company")
+(depends-on "sly-quicklisp")
 (depends-on "smartparens")
 (depends-on "smex")
 (depends-on "sr-speedbar")

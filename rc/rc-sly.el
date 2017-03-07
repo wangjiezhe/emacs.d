@@ -1,7 +1,7 @@
 ;;; Configuration for sly
 
 ;;; inferior lisp
-(setq inferior-lisp-program "sbcl")
+(setq inferior-lisp-program "sbcl --no-linedit")
 
 ;;; generalized documentation lookup
 (eval-after-load 'sly
@@ -16,5 +16,8 @@
       '((sbcl ("sbcl"))
         (ecl ("ecl"))
         (clisp ("clisp"))))
+
+(add-hook 'sly-mode-hook 'sly-company-mode)
+
 
 (provide 'rc-sly)
