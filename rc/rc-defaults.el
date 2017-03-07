@@ -234,6 +234,7 @@ buffer is not visiting a file."
    ("\\.ocamlinit\\'" . tuareg-mode)
    ("\\.ml[ily]\\'" . tuareg-mode)
    ("\\.topml\\'" . tuareg-mode)
+   ("\\.ipy\\'" . python-mode)
    ))
 
 
