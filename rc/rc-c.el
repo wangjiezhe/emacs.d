@@ -10,7 +10,8 @@
 
 (add-hook 'irony-mode-hook 'irony-eldoc)
 (add-hook 'irony-mode-hook 'flycheck-mode)
-(add-hook 'irony-mode-hook 'ctags-auto-update-mode)
+;; (add-hook 'irony-mode-hook 'ctags-auto-update-mode)
+(add-hook 'irony-mode-hook 'ggtags-mode)
 
 ;; function decides whether .h file is C or C++ header, sets C++ by
 ;; default because there's more chance of there being a .h without a
