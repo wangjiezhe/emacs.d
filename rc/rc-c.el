@@ -3,6 +3,8 @@
 ;;; enable function-args
 (fa-config-default)
 (set-default 'semantic-case-fold t)
+;; (setq-default c-basic-offset 4)
+
 
 (add-hook 'c++-mode-hook 'irony-mode)
 (add-hook 'c-mode-hook 'irony-mode)
