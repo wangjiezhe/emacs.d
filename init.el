@@ -50,6 +50,7 @@
 ;; (require 'unicad)                       ; auto detect charset
 ;; (require 'srt-mode)
 (require 'kconfig-mode)
+(require 'novel-mode)
 
 ;;; packages
 (require 'rc-undo-tree)
