@@ -13,9 +13,12 @@
 
 ;;; set a default font
 (when (and (display-graphic-p)
-           (member "Source Code Pro for Powerline" (font-family-list)))
-  (add-to-list 'initial-frame-alist '(font . "Source Code Pro for Powerline-13:demibold"))
-  (add-to-list 'default-frame-alist '(font . "Source Code Pro for Powerline-13:demibold")))
+           (member "Source Code Pro" (font-family-list)))
+  (set-frame-font "Source Code Pro-13:demibold")
+  (dolist (charset '(kana han symbol cjk-misc bopomofo))
+    (set-fontset-font (frame-parameter nil 'font)
+                      charset
+                      "Source Han Sans CN")))
 
 
 ;;; hide the startup message
