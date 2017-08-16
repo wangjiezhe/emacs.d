@@ -26,6 +26,7 @@
 ;;; custom backends
 (add-to-list 'company-backends 'sly-company)
 (add-to-list 'company-backends '(company-jedi company-files))
+(add-to-list 'company-backends 'company-ghc)
 
 
 (provide 'rc-company)

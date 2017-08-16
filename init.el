@@ -78,6 +78,7 @@
 (require 'rc-yasnippets)
 (require 'rc-eshell)
 (require 'rc-ocaml)
+(require 'rc-haskell)
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
