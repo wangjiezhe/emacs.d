@@ -3,7 +3,7 @@
 
 ;;; make buffer auto switch command auto suggestions, also for find-file command
 (ido-mode 1)
-;;; enable edo-everywhere
+;;; enable ido-everywhere
 (ido-everywhere 1)
 ;;; enable flx with ido
 (flx-ido-mode 1)
