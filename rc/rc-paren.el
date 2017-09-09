@@ -1,4 +1,4 @@
-;;; Configuration for pare1nthesis
+;;; Configuration for parenthesis
 
 (electric-pair-mode 1)
 
