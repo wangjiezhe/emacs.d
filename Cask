@@ -244,6 +244,7 @@
 (depends-on "verify-url")
 (depends-on "vimrc-mode")
 (depends-on "web-completion-data")
+(depends-on "web-mode")
 (depends-on "websocket")
 (depends-on "which-key")
 (depends-on "window-numbering")
