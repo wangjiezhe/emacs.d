@@ -18,16 +18,6 @@
 (eval-after-load 'haskell-mode
   '(define-key haskell-mode-map [f8] 'haskell-navigate-imports))
 
-(custom-set-variables
- ; Set up hasktags (part 2)
- '(haskell-tags-on-save t)
- ; Set up interactive mode (part 2)
- '(haskell-process-auto-import-loaded-modules t)
- '(haskell-process-log t)
- '(haskell-process-suggest-remove-import-lines t)
- ; Set interpreter to be "cabal repl"
- '(haskell-process-type 'cabal-repl))
-
 ; Add key combinations for interactive haskell-mode
 (eval-after-load 'haskell-mode '(progn
   (define-key haskell-mode-map (kbd "C-c C-l") 'haskell-process-load-or-reload)
@@ -53,19 +43,5 @@
 (autoload 'ghc-init "ghc" nil t)
 (autoload 'ghc-debug "ghc" nil t)
 (add-hook 'haskell-mode-hook (lambda () (ghc-init)))
-
-; COMPANY-GHC
-; -----------
-
-; Enable company-mode
-; (require 'company)
-; Use company in Haskell buffers
-; (add-hook 'haskell-mode-hook 'company-mode)
-; Use company in all buffers
-; (add-hook 'after-init-hook 'global-company-mode)
-
-; (add-to-list 'company-backends 'company-ghc)
-(custom-set-variables '(company-ghc-show-info t))
-
 
 (provide 'rc-haskell)
