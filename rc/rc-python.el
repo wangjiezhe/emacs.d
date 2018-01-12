@@ -7,8 +7,8 @@
 (setq elpy-rpc-backend "jedi")
 
 ;;; use ipython instead of standard python REPL
-(setenv "IPY_TEST_SIMPLE_PROMPT" "1")
-(elpy-use-ipython)
+(setq python-shell-interpreter "ipython"
+      python-shell-interpreter-args "-i --simple-prompt")
 
 ;;; enable autopep8 formatting on save
 ;; (add-hook 'elpy-mode-hook 'py-autopep8-enable-on-save)
