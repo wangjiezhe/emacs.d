@@ -1,5 +1,5 @@
-(source "gnu" "https://mirrors.tuna.tsinghua.edu.cn/elpa/gnu/")
-(source "melpa" "https://mirrors.tuna.tsinghua.edu.cn/elpa/melpa/")
+(source "gnu"   "https://elpa.emacs-china.org/gnu/")
+(source "melpa" "https://elpa.emacs-china.org/melpa/")
 
 (depends-on "2048-game")
 (depends-on "ace-window")
@@ -265,5 +265,7 @@
 ;; (source melpa)
 ;; (source "gnu" "https://elpa.zilongshanren.com/gnu/")
 ;; (source "melpa" "https://elpa.zilongshanren.com/melpa/")
+;; (source "gnu"   "https://elpa.emacs-china.org/gnu/")
+;; (source "melpa" "https://elpa.emacs-china.org/melpa/")
 ;; (source "gnu" "https://mirrors.tuna.tsinghua.edu.cn/elpa/gnu/")
 ;; (source "melpa" "https://mirrors.tuna.tsinghua.edu.cn/elpa/melpa/")
