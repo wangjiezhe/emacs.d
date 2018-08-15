@@ -654,6 +654,9 @@ header"
   :config
   (setq browse-kill-ring-highlight-current-entry t))
 
+(use-package systemd
+  :ensure t)
+
 (mapc
  (lambda (setting)
    (setq auto-mode-alist
