@@ -496,10 +496,10 @@ buffer is not visiting a file."
   ;; cancel selections by typing non-matching characters
   (setq company-require-match 'never)
   ;;; custom backends
-  (add-to-list 'company-backends '(sly-company company-jedi company-files)))
+  (add-to-list 'company-backends '(company-jedi company-files)))
 
-(use-package sly-company
-  :ensure t)
+;; (use-package sly-company
+;;   :ensure t)
 
 (use-package sly
   :ensure t
@@ -699,7 +699,7 @@ header"
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (sly-company browse-kill-ring merlin tuareg utop undo-tree auto-yasnippet common-lisp-snippets haskell-snippets java-snippets smex yasnippet-snippets avy anzu company-jedi function-args flycheck ggtags irony-eldoc irony expand-region highlight-defined multiple-cursors flx-ido elpy yasnippet bookmark+ editorconfig paredit switch-window window-numbering lua-mode undohist pkgbuild-mode vlf use-package sly rainbow-delimiters paredit-menu paredit-everywhere magit hlinum dired+ counsel company))))
+    (systemd browse-kill-ring merlin tuareg utop undo-tree auto-yasnippet common-lisp-snippets haskell-snippets java-snippets smex yasnippet-snippets avy anzu company-jedi function-args flycheck ggtags irony-eldoc irony expand-region highlight-defined multiple-cursors flx-ido elpy bookmark+ editorconfig paredit switch-window window-numbering lua-mode undohist pkgbuild-mode vlf use-package sly rainbow-delimiters paredit-menu paredit-everywhere magit hlinum dired+ counsel company))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
