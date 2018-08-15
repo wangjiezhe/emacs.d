@@ -337,7 +337,9 @@ buffer is not visiting a file."
   (editorconfig-mode 1))
 
 (use-package novel-mode
-  :load-path "site-lisp")
+  :load-path "site-lisp"
+  :config
+  (setq novel-default-margin 9))
 
 (use-package kconfig-mode
   :load-path "site-lisp")
