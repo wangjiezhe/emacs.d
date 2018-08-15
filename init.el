@@ -367,6 +367,8 @@ buffer is not visiting a file."
 
 (use-package paredit
   :ensure t
+  :bind (("{" . paredit-open-curly)
+         ("}" . paredit-close-curly))
   :hook ((emacs-lisp-mode
           eval-expression-minibuffer-setup
           ielm-mode
@@ -377,7 +379,8 @@ buffer is not visiting a file."
           racket-repl-mode
           sly-mode
           inferior-scheme-mode
-          lua-mode) . enable-paredit-mode))
+          lua-mode
+          conf-mode) . enable-paredit-mode))
 
 (use-package paredit-everywhere
   :ensure t
