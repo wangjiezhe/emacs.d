@@ -30,7 +30,7 @@
 ;;; set a default font
 (when (and (display-graphic-p)
            (member "Source Code Pro" (font-family-list)))
-  (set-frame-font "Source Code Pro-13:demibold")
+  (set-frame-font "Source Code Pro-14:demibold")
   (dolist (charset '(kana han symbol cjk-misc bopomofo))
     (set-fontset-font (frame-parameter nil 'font)
                       charset
@@ -657,6 +657,12 @@ header"
 (use-package systemd
   :ensure t)
 
+(use-package vimrc-mode
+  :ensure t)
+
+(use-package markdown-mode
+  :ensure t)
+
 (mapc
  (lambda (setting)
    (setq auto-mode-alist
@@ -694,7 +700,10 @@ header"
    ("\\.ml[ily]\\'" . tuareg-mode)
    ("\\.topml\\'" . tuareg-mode)
    ("\\.ipy\\'" . python-mode)
-   ("\\.sbclrc\'" . lisp-mode)
+   ("\\.sbclrc\\'" . lisp-mode)
+   ("\\.\\(g\\)?vim\\(rc\\)?\\'" . vimrc-mode)
+   ("\\.swig" . web-mode)
+   ("\\.styl" . css-mode)
    ))
 
 
@@ -705,7 +714,7 @@ header"
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (systemd browse-kill-ring merlin tuareg utop undo-tree auto-yasnippet common-lisp-snippets haskell-snippets java-snippets smex yasnippet-snippets avy anzu company-jedi function-args flycheck ggtags irony-eldoc irony expand-region highlight-defined multiple-cursors flx-ido elpy bookmark+ editorconfig paredit switch-window window-numbering lua-mode undohist pkgbuild-mode vlf use-package sly rainbow-delimiters paredit-menu paredit-everywhere magit hlinum dired+ counsel company))))
+    (stylus-mode pug-mode company-web web-mode markdown-mode yaml-mode vimrc-mode systemd browse-kill-ring merlin tuareg utop undo-tree auto-yasnippet common-lisp-snippets haskell-snippets java-snippets smex avy anzu company-jedi function-args flycheck ggtags irony-eldoc irony expand-region highlight-defined multiple-cursors flx-ido elpy bookmark+ editorconfig paredit switch-window window-numbering lua-mode undohist pkgbuild-mode vlf use-package sly rainbow-delimiters paredit-menu paredit-everywhere magit hlinum dired+ counsel company))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -714,5 +723,5 @@ header"
  )
 
 ;; ## added by OPAM user-setup for emacs / base ## 56ab50dc8996d2bb95e7856a6eddb17b ## you can edit, but keep this line
-(require 'opam-user-setup "~/.emacs.d/opam-user-setup.el")
+;; (require 'opam-user-setup "~/.emacs.d/opam-user-setup.el")
 ;; ## end of OPAM user-setup addition for emacs / base ## keep this line
