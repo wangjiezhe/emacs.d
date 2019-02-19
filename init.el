@@ -15,11 +15,13 @@
       (expand-file-name "emacs" temporary-file-directory))
 (make-directory temporary-file-directory t)
 
-;; (setq package-archives '(("gnu"   . "https://")
-;;                       ("melpa" . "https://melpa.org/packages/")))
+(setq package-archives '(("gnu"   . "http://elpa.emacs-china.org/gnu/")
+                         ("melpa" . "http://elpa.emacs-china.org/melpa/")
+                         ("org" . "http://elpa.emacs-china.org/org/")))
 (require 'package)
 ;; (add-to-list 'package-archives '("melpa" . "http://mirrors.tuna.tsinghua.edu.cn/elpa/melpa/"))
-(add-to-list 'package-archives '("melpa" . "http://elpa.emacs-china.org/melpa/"))
+;; (add-to-list 'package-archives '("gnu" . "http://elpa.emacs-china.org/gnu/") )
+;; (add-to-list 'package-archives '("melpa" . "http://elpa.emacs-china.org/melpa/"))
 (package-initialize)
 
 
@@ -714,7 +716,7 @@ header"
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (stylus-mode pug-mode company-web web-mode markdown-mode yaml-mode vimrc-mode systemd browse-kill-ring merlin tuareg utop undo-tree auto-yasnippet common-lisp-snippets haskell-snippets java-snippets smex avy anzu company-jedi function-args flycheck ggtags irony-eldoc irony expand-region highlight-defined multiple-cursors flx-ido elpy bookmark+ editorconfig paredit switch-window window-numbering lua-mode undohist pkgbuild-mode vlf use-package sly rainbow-delimiters paredit-menu paredit-everywhere magit hlinum dired+ counsel company))))
+    (org stylus-mode pug-mode company-web web-mode markdown-mode yaml-mode vimrc-mode systemd browse-kill-ring merlin tuareg utop undo-tree auto-yasnippet common-lisp-snippets haskell-snippets java-snippets smex avy anzu company-jedi function-args flycheck ggtags irony-eldoc irony expand-region highlight-defined multiple-cursors flx-ido elpy bookmark+ editorconfig paredit switch-window window-numbering lua-mode undohist pkgbuild-mode vlf use-package sly rainbow-delimiters paredit-menu paredit-everywhere magit hlinum dired+ counsel company))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
